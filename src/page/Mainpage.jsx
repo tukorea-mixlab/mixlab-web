@@ -6,6 +6,7 @@ import exploration from "../Img/Icons/exploration.png";
 import entyusiasm from "../Img/Icons/entyusiasm.png";
 import combination from "../Img/Icons/combination.png";
 import IntroList from "../component/Card/IntroList";
+import Button from "../component/Button/Button";
 // import challenge from "../Img/Icons/challenge.png";
 
 export default function Mainpage() {
@@ -48,8 +49,9 @@ export default function Mainpage() {
               MIX LAB <br />” Make Intelligent eXperience ”
             </p>
           </div>
-          <button></button>
+          <Button />
         </div>
+        <div className="gradient"></div>
         <div className="mainbanner"></div>
       </div>
       <div className="PageContainer">
@@ -65,6 +67,18 @@ export default function Mainpage() {
           />
 
           <IntroList data={Identity}></IntroList>
+        </div>
+
+        <div className="recentnews">
+          <Title
+            subText={"MIX Lab`s Identity"}
+            h3={"MIX LAB 추진방향"}
+            information={[
+              "MIX LAB의 아이덴티티는 탐구와 열정, 도전, 결합으로 ",
+              <br />,
+              " 총 4가지로 구성되어 있습니다.",
+            ]}
+          />
         </div>
       </div>
     </div>
