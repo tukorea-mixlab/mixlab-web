@@ -1,0 +1,57 @@
+  <Carousel
+              activeSlideIndex={activeSlideIndex}
+              onRequestChange={setActiveSlideIndex}
+              disableSwipeByMouse={true}
+              disableSwipeByTouch={true}
+              itemsToShow={3}
+              itemsToScroll={0}
+              containerProps={{
+                style: {
+                  position: "relative",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "30px",
+                },
+              }}
+              innerProps={{
+                children: "asd",
+              }}
+              itemsListProps={{
+                style: {
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "30px",
+                  justifyContent: "center",
+                  overflow: "hiddien",
+                },
+              }}
+              forwardBtnProps={{
+                style: {
+                  display: "none",
+                },
+              }}
+              backwardBtnProps={{
+                style: {
+                  display: "none",
+                },
+              }}
+              dotsNav={{
+                show: false,
+              }}
+            >
+              <img
+                src={img}
+                style={{ width: "175px", height: "175px" }}
+                alt=""
+              />
+              <img
+                src={img}
+                style={{ width: "277px", height: "277px" }}
+                alt=""
+              />
+              <img
+                src={img}
+                style={{ width: "175px", height: "175px" }}
+                alt=""
+              />
+            </Carousel>

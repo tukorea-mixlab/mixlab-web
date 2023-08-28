@@ -1,6 +1,7 @@
 /* Title style */
 .titleContainer {
   width: 100%;
+  min-width: 408px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -38,8 +39,8 @@ h3 {
   text-align: var(--align);
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 500;
+  line-height: 140%;
 }
 
 /* Intro CSS */

@@ -1,0 +1,23 @@
+.footer {
+  width: 100vw;
+  height: 240px;
+  display: flex;
+  background-color: var(--G9);
+}
+
+.footerContainer {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footerContainer > .logo {
+  width: 105px;
+  color: var(--G4);
+}
+
+.footerContainer > p {
+  color: var(--G4);
+}

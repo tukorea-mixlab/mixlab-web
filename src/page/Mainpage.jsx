@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import "./mainpage.css";
 import Title from "../component/Title";
 import challenge from "../Img/Icons/challenge.png";
@@ -7,6 +7,11 @@ import entyusiasm from "../Img/Icons/entyusiasm.png";
 import combination from "../Img/Icons/combination.png";
 import IntroList from "../component/Card/IntroList";
 import Button from "../component/Button/Button";
+import Header from "../component/Header/Header";
+import Section from "../component/Section/Section";
+import Carousel from "../component/Carousel/Carousel";
+import SixCarousel from "../component/Carousel/Sixcarousel";
+import Footer from "../component/Footer/Footer";
 // import challenge from "../Img/Icons/challenge.png";
 
 export default function Mainpage() {
@@ -33,8 +38,11 @@ export default function Mainpage() {
     },
   ];
 
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
   return (
     <div className="PageWrapper">
+      <Header></Header>
       <div className="mainContainer">
         <div className="textContainer">
           <div className="hero">
@@ -55,32 +63,50 @@ export default function Mainpage() {
         <div className="mainbanner"></div>
       </div>
       <div className="PageContainer">
-        <div className="identity">
-          <Title
-            subText={"MIX Lab`s Identity"}
-            h3={"MIX LAB 추진방향"}
-            information={[
-              "MIX LAB의 아이덴티티는 탐구와 열정, 도전, 결합으로 ",
-              <br />,
-              " 총 4가지로 구성되어 있습니다.",
-            ]}
-          />
+        <Section
+          subText={"MIX Lab`s Identity"}
+          h3={"MIX LAB 추진방향"}
+          information={[
+            "MIX LAB의 아이덴티티는 탐구와 열정, 도전, 결합으로 ",
+            <br />,
+            " 총 4가지로 구성되어 있습니다.",
+          ]}
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={<IntroList data={Identity}></IntroList>}
+        />
 
-          <IntroList data={Identity}></IntroList>
-        </div>
+        <Section
+          className={"recentnews"}
+          subText={"MIX Lab`s Identity"}
+          h3={"MIX LAB 추진방향"}
+          type={"right"}
+          align={"left"}
+          information={[
+            "MIX LAB에서 진행된 MIXER들의 프로젝트 작품들을 ",
+            <br />,
+            "볼 수 있습니다.",
+          ]}
+          width={"408px"}
+          children={<Carousel />}
+        />
 
-        <div className="recentnews">
-          <Title
-            subText={"MIX Lab`s Identity"}
-            h3={"MIX LAB 추진방향"}
-            information={[
-              "MIX LAB의 아이덴티티는 탐구와 열정, 도전, 결합으로 ",
-              <br />,
-              " 총 4가지로 구성되어 있습니다.",
-            ]}
-          />
-        </div>
+        <Section
+          subText={"RecentNews"}
+          h3={"MIX LAB의 최근 소식"}
+          information={[
+            "MIXER들의 내외부 활동 및 MIX LAB에서",
+            <br />,
+            "진행된 연구관련 새로운 소식입니다.",
+          ]}
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={<SixCarousel />}
+        />
       </div>
+      <Footer></Footer>
     </div>
   );
 }
