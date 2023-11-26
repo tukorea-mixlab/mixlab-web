@@ -1,12 +1,12 @@
 .identity {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: var(--text-margin);
 }
 
 .recentnews {
   display: flex;
   max-width: 1200px;
 
-  gap: 100px;
+  gap: var(--text-margin);
 }

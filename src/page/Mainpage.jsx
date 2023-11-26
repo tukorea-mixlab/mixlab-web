@@ -42,7 +42,6 @@ export default function Mainpage() {
 
   return (
     <div className="PageWrapper">
-      <Header></Header>
       <div className="mainContainer">
         <div className="textContainer">
           <div className="hero">
@@ -106,7 +105,6 @@ export default function Mainpage() {
           children={<SixCarousel />}
         />
       </div>
-      <Footer></Footer>
     </div>
   );
 }

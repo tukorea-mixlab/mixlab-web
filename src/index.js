@@ -2,15 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Mainpage from "./page/Mainpage";
+import MainLayout from "./component/layout/MainLayout";
+import Intropage from "./page/Intropage";
 import Header from "../src/component/Header/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Mainpage />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route index element={<Intropage />}></Route>
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

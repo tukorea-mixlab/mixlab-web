@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 250px;
+  gap: var(--content-margin);
   margin: 150px auto;
 }
 
