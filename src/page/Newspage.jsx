@@ -14,7 +14,7 @@ import SixCarousel from "../component/Carousel/Sixcarousel";
 import Footer from "../component/Footer/Footer";
 // import challenge from "../Img/Icons/challenge.png";
 
-export default function Newspage() {
+export default function Intropage() {
   const data = {
     subText: "Overview",
     h3: "What is MIX LAB",
@@ -54,22 +54,16 @@ export default function Newspage() {
     <div className="PageWrapper">
       <div className="introContainer">
         <div className="intro_text">
-          <h2>Introduction</h2>
-          <p>Mix Lab의 소개 페이지 입니다.</p>
+          <h2>News</h2>
+          <p>Mix Lab의 소식을 알려드립니다..</p>
         </div>
         <div className="gradient"></div>
         <div className="introbanner"></div>
       </div>
       <div className="PageContainer">
-        <Section
-          subText={data.subText}
-          h3={data.h3}
-          information={data.information}
-          align={"center"}
-          type={"center"}
-          className={"identity"}
-          children={<IntroList data={Overview}></IntroList>}
-        />
+        <div className="newsContainer">
+          <h2 className="center">MIX LAB 수상실적</h2>
+        </div>
       </div>
     </div>
   );

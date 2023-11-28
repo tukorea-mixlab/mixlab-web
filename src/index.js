@@ -4,6 +4,7 @@ import "./index.css";
 import Mainpage from "./page/Mainpage";
 import MainLayout from "./component/layout/MainLayout";
 import Intropage from "./page/Intropage";
+import Newspage from "./page/Newspage";
 import Header from "../src/component/Header/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
@@ -13,7 +14,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route element={<MainLayout />}>
-        <Route index element={<Intropage />}></Route>
+        <Route index element={<Newspage />}></Route>
       </Route>
     </Routes>
   </BrowserRouter>

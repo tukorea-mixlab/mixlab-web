@@ -7,7 +7,6 @@
 }
 
 :root {
-  
   --P1: #5872ff;
   --P2: #3c4990;
   --G1: #ffffff;
@@ -20,11 +19,14 @@
   --G8: #202020;
   --G9: #131313;
 
-
   /* 컨텐츠 관련 마진 */
 
   --content-margin: 250px;
   --text-margin: 100px;
+}
+
+.center {
+  text-align: center;
 }
 
 * {
