@@ -56,6 +56,7 @@ export default function Intropage() {
         <div className="intro_text">
           <h2>News</h2>
           <p>Mix Lab의 소식을 알려드립니다..</p>
+          <p>Mix Lab의 소식을 알려드립니다..</p>
         </div>
         <div className="gradient"></div>
         <div className="introbanner"></div>
