@@ -12,6 +12,9 @@ import Section from "../component/Section/Section";
 import Carousel from "../component/Carousel/Carousel";
 import SixCarousel from "../component/Carousel/Sixcarousel";
 import Footer from "../component/Footer/Footer";
+import AccordionList from "../component/Accordion/AccordionList";
+
+
 // import challenge from "../Img/Icons/challenge.png";
 
 export default function Newspage() {
@@ -50,6 +53,12 @@ export default function Newspage() {
     },
   ];
 
+
+  //자주 묻는 질문들 내용 추가 (12-27 11:46)
+  const QnA = {
+    h3: "자주 묻는 질문들"
+  }
+
   return (
     <div className="PageWrapper">
       <div className="introContainer">
@@ -69,6 +78,17 @@ export default function Newspage() {
           type={"center"}
           className={"identity"}
           children={<IntroList data={Overview}></IntroList>}
+        />
+
+
+        {/* 자주 묻는 질문들 레이아웃 추가 (12-27 11:46) */}
+        <Section
+          h3={QnA.h3}
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={<AccordionList></AccordionList>
+        }
         />
       </div>
     </div>
