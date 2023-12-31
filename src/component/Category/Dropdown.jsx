@@ -3,8 +3,8 @@ import styles from './Dropdown.module.css'
 
 function Dropdown (props){
   return(
-    <div className={ props.visibility ? styles.dropdown : null }>
-      { props.visibility && props.children }
+    <div className={`${styles.dropdown} ${props.visibility ? styles.active : ''}`}>
+      {props.children}
     </div>
   )
 };

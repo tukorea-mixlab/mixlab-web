@@ -1,19 +1,30 @@
 import React, { useState } from "react";
 import styles from './Category.module.css'
 import Dropdown from "./Dropdown";
+import AccordionButton from '../Button/AccordionButton'
 
 
 function Category(props){
+
+  //열리고 닫히는 상태 표시
   let[dropdownVisibility, setDropdownVisibility] = useState(false);
 
   return(
-      <div className={dropdownVisibility? styles.openCategory : styles.closeCategory}>
+    <div className={`${styles.Category} ${dropdownVisibility ? styles.active : ''}`}>
         <div className={styles.question}>
           <p>{props.question}</p>
-          <button onClick={(e)=>setDropdownVisibility(!dropdownVisibility)}>{dropdownVisibility? 'Close' : 'Open'}</button> {/*button 컴포넌트 제작 안 해서 일단 이걸로 넣어둠 */}
+          <AccordionButton
+            onClick={(e)=>setDropdownVisibility(!dropdownVisibility)}
+            dropdownVisibility = {dropdownVisibility}
+          ></AccordionButton>
         </div>
+
         <Dropdown visibility={dropdownVisibility}>
-          <p>{props.answer}</p>
+
+        {/* props. */}
+        <ol type="A">
+          <li>{props.answer}</li>
+        </ol>
         </Dropdown>
       </div>
   )

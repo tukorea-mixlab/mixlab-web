@@ -4,7 +4,7 @@ import img from '../../Img/Icons/AccordionArrow.svg'
 
 export default function Accordion(props) {
   return (
-    <div className="Accordion">
+    <div className="Accordion active">
       <div className="Question layout">
         <p>
           {props.question}
