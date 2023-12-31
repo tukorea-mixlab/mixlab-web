@@ -3,7 +3,7 @@ import styles from './Dropdown.module.css'
 
 function Dropdown (props){
   return(
-    <div className={`${styles.dropdown} ${props.visibility ? styles.active : ''}`}>
+    <div className={`${styles.dropdown} ${props.visibility ? styles.active : ''}`} style={{ maxHeight: `${props.maxHeight}px` }}>
       {props.children}
     </div>
   )
