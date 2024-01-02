@@ -13,6 +13,7 @@ import Carousel from "../component/Carousel/Carousel";
 import SixCarousel from "../component/Carousel/Sixcarousel";
 import Footer from "../component/Footer/Footer";
 import CategoryList from "../component/Category/CategoryList";
+import Card_application from "../component/Card/Card_application";
 
 
 // import challenge from "../Img/Icons/challenge.png";
@@ -90,102 +91,90 @@ export default function Newspage() {
   const History = [
     {
       question: 'Journal Articles',
-      answer: `2021
-      Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design Requirements and Conceptual Scenarios of Temporary Negative Pressure Isolation Wards for Infectious Diseases. Archives of Design Research, 34(3), 137-153.
-      Lee, M. H., Lee, H. M., Chung, S. T. (2021). Are You Watching Me?: The Design of a Video-based Learning Management System Using Learners” History Data. Archives of Design Research, 34(4), 225-239.
-      
-      
-      2020
-      Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context through Everyday Objects. Archives of Design Research, 33(1), 5-15.
-      Jeong, Y., Kim, H. J., Cho, H., & Nam, T. J. (2020). M. Integrator: a maker’s tool for integrating kinetic mechanisms and sensors. International Journal on Interactive Design and Manufacturing (IJIDeM), 14(1), 271-283.
-      
-      
-      2019
-      Lee, M. H. (2019). Challenges of designing with open data: The case of cultural data. Archives of Design Research, 32(3), 57-72.
-      
-      
-      2018
-      Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … & Nam, T. J. (2018). Flower-Pop: Facilitating casual group conversations with multiple mobile devices. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(4), 1-24.
+      answer: <div>
+      <h3>2021</h3>
+      <div>Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design Requirements and Conceptual Scenarios of Temporary Negative Pressure Isolation Wards for Infectious Diseases. Archives of Design Research, 34(3), 137-153.
+      Lee, M. H., Lee, H. M., Chung, S. T. (2021). Are You Watching Me?: The Design of a Video-based Learning Management System Using Learners” History Data. Archives of Design Research, 34(4), 225-239.</div>
+      <br/>
+      <h3>2020</h3>
+      <div>Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context through Everyday Objects. Archives of Design Research, 33(1), 5-15.
+      Jeong, Y., Kim, H. J., Cho, H., & Nam, T. J. (2020). M. Integrator: a maker’s tool for integrating kinetic mechanisms and sensors. International Journal on Interactive Design and Manufacturing (IJIDeM), 14(1), 271-283.</div>
+      <br/>
+      <h3>2019</h3>
+      <div>Lee, M. H. (2019). Challenges of designing with open data: The case of cultural data. Archives of Design Research, 32(3), 57-72.</div>
+      <br/>
+      <h3>2018</h3>
+      <div>Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … & Nam, T. J. (2018). Flower-Pop: Facilitating casual group conversations with multiple mobile devices. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(4), 1-24.
       Lee, M. H. (2018). A study on Citizens’ public report application usage. Archives of Design Research, 31(3), 49-66.
-      Kim, H. J., Jeong, Y., Kim, J. W., & Nam, T. J. (2018). A prototyping tool for kinetic mechanism design and fabrication: Developing and deploying M. Sketch for science, technology, engineering, the arts, and mathematics education. Advances in Mechanical Engineering, 10(12), 1687814018804104.
-      
-      
-      2016
-      Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital Traces for Enhancing Emotional Values of Digital Artifacts. Archives of Design Research, 29(2), 65-77.
-      
-      
-      2015
-      Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces on the appreciation of movie contents. Digital Creativity, 26(3-4), 287-303.
-      
-      
-      2011
-      이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험 형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design Research, 24(2), 195-206.`
+      Kim, H. J., Jeong, Y., Kim, J. W., & Nam, T. J. (2018). A prototyping tool for kinetic mechanism design and fabrication: Developing and deploying M. Sketch for science, technology, engineering, the arts, and mathematics education. Advances in Mechanical Engineering, 10(12), 1687814018804104.</div>
+      <br/>
+      <h3>2016</h3>
+      <div>Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital Traces for Enhancing Emotional Values of Digital Artifacts. Archives of Design Research, 29(2), 65-77.</div>
+      <br/>
+      <h3>2015</h3>
+      <div>Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces on the appreciation of movie contents. Digital Creativity, 26(3-4), 287-303.</div>
+      <br/>
+      <h3>2011</h3>
+      <div>이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험 형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design Research, 24(2), 195-206.</div>
+    </div>
     },
     {
       question: 'International Conference Proceedings',
-      answer: `2021
-      Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design Requirements and Conceptual Scenarios of Temporary Negative Pressure Isolation Wards for Infectious Diseases. Archives of Design Research, 34(3), 137-153.
-      Lee, M. H., Lee, H. M., Chung, S. T. (2021). Are You Watching Me?: The Design of a Video-based Learning Management System Using Learners” History Data. Archives of Design Research, 34(4), 225-239.
-      
-      
-      2020
-      Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context through Everyday Objects. Archives of Design Research, 33(1), 5-15.
-      Jeong, Y., Kim, H. J., Cho, H., & Nam, T. J. (2020). M. Integrator: a maker’s tool for integrating kinetic mechanisms and sensors. International Journal on Interactive Design and Manufacturing (IJIDeM), 14(1), 271-283.
-      
-      
-      2019
-      Lee, M. H. (2019). Challenges of designing with open data: The case of cultural data. Archives of Design Research, 32(3), 57-72.
-      
-      
-      2018
-      Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … & Nam, T. J. (2018). Flower-Pop: Facilitating casual group conversations with multiple mobile devices. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(4), 1-24.
+      answer: <div>
+      <h3>2021</h3>
+      <div>Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design Requirements and Conceptual Scenarios of Temporary Negative Pressure Isolation Wards for Infectious Diseases. Archives of Design Research, 34(3), 137-153.
+      Lee, M. H., Lee, H. M., Chung, S. T. (2021). Are You Watching Me?: The Design of a Video-based Learning Management System Using Learners” History Data. Archives of Design Research, 34(4), 225-239.</div>
+      <br/>
+      <h3>2020</h3>
+      <div>Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context through Everyday Objects. Archives of Design Research, 33(1), 5-15.
+      Jeong, Y., Kim, H. J., Cho, H., & Nam, T. J. (2020). M. Integrator: a maker’s tool for integrating kinetic mechanisms and sensors. International Journal on Interactive Design and Manufacturing (IJIDeM), 14(1), 271-283.</div>
+      <br/>
+      <h3>2019</h3>
+      <div>Lee, M. H. (2019). Challenges of designing with open data: The case of cultural data. Archives of Design Research, 32(3), 57-72.</div>
+      <br/>
+      <h3>2018</h3>
+      <div>Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … & Nam, T. J. (2018). Flower-Pop: Facilitating casual group conversations with multiple mobile devices. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(4), 1-24.
       Lee, M. H. (2018). A study on Citizens’ public report application usage. Archives of Design Research, 31(3), 49-66.
-      Kim, H. J., Jeong, Y., Kim, J. W., & Nam, T. J. (2018). A prototyping tool for kinetic mechanism design and fabrication: Developing and deploying M. Sketch for science, technology, engineering, the arts, and mathematics education. Advances in Mechanical Engineering, 10(12), 1687814018804104.
-      
-      
-      2016
-      Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital Traces for Enhancing Emotional Values of Digital Artifacts. Archives of Design Research, 29(2), 65-77.
-      
-      
-      2015
-      Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces on the appreciation of movie contents. Digital Creativity, 26(3-4), 287-303.
-      
-      
-      2011
-      이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험 형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design Research, 24(2), 195-206.`
+      Kim, H. J., Jeong, Y., Kim, J. W., & Nam, T. J. (2018). A prototyping tool for kinetic mechanism design and fabrication: Developing and deploying M. Sketch for science, technology, engineering, the arts, and mathematics education. Advances in Mechanical Engineering, 10(12), 1687814018804104.</div>
+      <br/>
+      <h3>2016</h3>
+      <div>Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital Traces for Enhancing Emotional Values of Digital Artifacts. Archives of Design Research, 29(2), 65-77.</div>
+      <br/>
+      <h3>2015</h3>
+      <div>Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces on the appreciation of movie contents. Digital Creativity, 26(3-4), 287-303.</div>
+      <br/>
+      <h3>2011</h3>
+      <div>이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험 형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design Research, 24(2), 195-206.</div>
+    </div>
     },
     {
       question: 'Domestic Conference Proceedings',
-      answer: `2021
-      Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design Requirements and Conceptual Scenarios of Temporary Negative Pressure Isolation Wards for Infectious Diseases. Archives of Design Research, 34(3), 137-153.
-      Lee, M. H., Lee, H. M., Chung, S. T. (2021). Are You Watching Me?: The Design of a Video-based Learning Management System Using Learners” History Data. Archives of Design Research, 34(4), 225-239.
-      
-      
-      2020
-      Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context through Everyday Objects. Archives of Design Research, 33(1), 5-15.
-      Jeong, Y., Kim, H. J., Cho, H., & Nam, T. J. (2020). M. Integrator: a maker’s tool for integrating kinetic mechanisms and sensors. International Journal on Interactive Design and Manufacturing (IJIDeM), 14(1), 271-283.
-      
-      
-      2019
-      Lee, M. H. (2019). Challenges of designing with open data: The case of cultural data. Archives of Design Research, 32(3), 57-72.
-      
-      
-      2018
-      Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … & Nam, T. J. (2018). Flower-Pop: Facilitating casual group conversations with multiple mobile devices. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(4), 1-24.
-      Lee, M. H. (2018). A study on Citizens’ public report application usage. Archives of Design Research, 31(3), 49-66.
-      Kim, H. J., Jeong, Y., Kim, J. W., & Nam, T. J. (2018). A prototyping tool for kinetic mechanism design and fabrication: Developing and deploying M. Sketch for science, technology, engineering, the arts, and mathematics education. Advances in Mechanical Engineering, 10(12), 1687814018804104.
-      
-      
-      2016
-      Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital Traces for Enhancing Emotional Values of Digital Artifacts. Archives of Design Research, 29(2), 65-77.
-      
-      
-      2015
-      Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces on the appreciation of movie contents. Digital Creativity, 26(3-4), 287-303.
-      
-      
-      2011
-      이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험 형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design Research, 24(2), 195-206.`
+      answer: <div>
+        <h3>2021</h3>
+        <div>Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design Requirements and Conceptual Scenarios of Temporary Negative Pressure Isolation Wards for Infectious Diseases. Archives of Design Research, 34(3), 137-153.
+        Lee, M. H., Lee, H. M., Chung, S. T. (2021). Are You Watching Me?: The Design of a Video-based Learning Management System Using Learners” History Data. Archives of Design Research, 34(4), 225-239.</div>
+        <br/>
+        <h3>2020</h3>
+        <div>Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context through Everyday Objects. Archives of Design Research, 33(1), 5-15.
+        Jeong, Y., Kim, H. J., Cho, H., & Nam, T. J. (2020). M. Integrator: a maker’s tool for integrating kinetic mechanisms and sensors. International Journal on Interactive Design and Manufacturing (IJIDeM), 14(1), 271-283.</div>
+        <br/>
+        <h3>2019</h3>
+        <div>Lee, M. H. (2019). Challenges of designing with open data: The case of cultural data. Archives of Design Research, 32(3), 57-72.</div>
+        <br/>
+        <h3>2018</h3>
+        <div>Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … & Nam, T. J. (2018). Flower-Pop: Facilitating casual group conversations with multiple mobile devices. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(4), 1-24.
+        Lee, M. H. (2018). A study on Citizens’ public report application usage. Archives of Design Research, 31(3), 49-66.
+        Kim, H. J., Jeong, Y., Kim, J. W., & Nam, T. J. (2018). A prototyping tool for kinetic mechanism design and fabrication: Developing and deploying M. Sketch for science, technology, engineering, the arts, and mathematics education. Advances in Mechanical Engineering, 10(12), 1687814018804104.</div>
+        <br/>
+        <h3>2016</h3>
+        <div>Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital Traces for Enhancing Emotional Values of Digital Artifacts. Archives of Design Research, 29(2), 65-77.</div>
+        <br/>
+        <h3>2015</h3>
+        <div>Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces on the appreciation of movie contents. Digital Creativity, 26(3-4), 287-303.</div>
+        <br/>
+        <h3>2011</h3>
+        <div>이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험 형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design Research, 24(2), 195-206.</div>
+      </div>
     }
   ]
 
@@ -200,6 +189,7 @@ export default function Newspage() {
         <div className="introbanner"></div>
       </div>
       <div className="PageContainer">
+        
         <Section
           subText={data.subText}
           h3={data.h3}
@@ -221,7 +211,7 @@ export default function Newspage() {
         }
         />
 
-        {/* 자주 묻는 질문들 레이아웃 추가 (12-27 11:46) */}
+        {/* 믹스랩 추가 (12-31 22:08) */}
         <Section
           h3={"MIX LAB 역사"}
           align={"center"}
@@ -232,7 +222,20 @@ export default function Newspage() {
         }
         />
 
+        {/*Mix지원하기 추가 (12-31 22:08) */}
+        <Section
+          h3={"MIX LAB에 지원하기"}
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={
+            <div>
+              <Card_application></Card_application>
+            </div>
+        }
+        />
       </div>
+      <Footer></Footer>
     </div>
   );
 }

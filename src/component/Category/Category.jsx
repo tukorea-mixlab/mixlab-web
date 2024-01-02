@@ -36,9 +36,8 @@ function Category(props){
         <div ref={Height}>
           {props.Hyphen ? <ol type="A">
             <li>{props.answer}</li>
-          </ol> : <div>{props.answer}</div>
+          </ol> : <div className={styles.OnlyText}>{props.answer}</div>
           }
-          
         </div>
         </Dropdown>
       </div>

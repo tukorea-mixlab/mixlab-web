@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+.Background{
+  background-image: url('../../Img/Liquid.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--G1);
+  padding: 70px 0px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.Background h1{
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.Background h5{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.wrap{
+  display: flex;
+  gap: 30px;
+  color: var(--G1);
+  background-color: var(--G8);
+  overflow: hidden;
+  min-height: 380px;
+}
+
+
+.cardTitle{
+  background-color: var(--G7);
+  padding: 22px 40px;
+}
+
+.cardContent{
+  margin-top: 32px;
+  padding: 0px 36px 0px 60px;
+  margin-bottom: 100px;
+}
+
+.cardButton{
+  position: absolute;
+  right: 36px;
+  bottom: 30px;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 400; 
+}
+h4{
+  font-size: 16px;
+  font-weight: 300; 
+}
+
+ul{
+}
+
+li{
+  line-height: 130%;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.cardContainer{
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid var(--G1);
+  overflow: hidden;
+  position: relative;
+}
+
+.cardButton{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
