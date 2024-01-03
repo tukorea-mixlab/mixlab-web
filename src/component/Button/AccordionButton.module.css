@@ -1,0 +1,12 @@
+.accordionButton{
+  background:none;
+  border: none;
+}
+
+img{
+  transform: rotate(180deg);
+}
+
+.active img{
+  transform: rotate(0deg);
+}

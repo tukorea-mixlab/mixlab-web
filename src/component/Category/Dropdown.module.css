@@ -9,15 +9,28 @@
 
 .dropdown{
   display: flex;
-  width: 1200px;
-  padding: 22px 32px;
+  padding: 0px 32px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.5px solid #B5B5B5;
-  background: #303030;
-
-  color: #ffffff;
-  font-size: 16px;
+  background-color: var(--G7);
+  color: var(--G1);
+  font-size: 18px;
   font-weight: 400;
   line-height: 160%;
+  width: 100%;
+  transition: max-height 0.4s ease, border-top 0.34s ease;
+  overflow: hidden;
+  border-top: 0px solid var(--G1);
+  border-bottom: 0.5px solid var(--G1);
+}
+
+.dropdown ol{
+}
+
+.dropdown li{
+  margin: 22px 0px 22px 22px;
+}
+
+.active{
+  border-top: 0.5px solid var(--G1);
 }
