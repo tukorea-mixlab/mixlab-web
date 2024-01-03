@@ -234,6 +234,7 @@ export default function Newspage() {
             </div>
         }
         />
+        
       </div>
       <Footer></Footer>
     </div>
