@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap");
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-.question{
+.question {
   font-size: 20px;
   display: flex;
   width: 100%;
@@ -17,30 +17,36 @@
   align-items: center;
   color: var(--G1);
   font-weight: 600;
-  line-height: 160%; 
+  line-height: 160%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
-.Category{
+.question:hover {
+  background-color: var(--G7);
+  transition: all 0.3s;
 }
 
-.active .question{
+.Category {
+}
+
+.active .question {
   background-color: var(--G7);
   color: var(--G1);
 }
 
-.list{
+.list {
   border-top: 0.5px solid var(--G1);
 }
 
-.OnlyText{
+.OnlyText {
   padding: 22px 0px;
 }
 
-.OnlyText h3{
+.OnlyText h3 {
   font-size: 24px;
 }
 
-.OnlyText div{
+.OnlyText div {
   font-size: 16px;
 }

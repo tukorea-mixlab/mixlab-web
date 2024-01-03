@@ -47,15 +47,23 @@
   height: 40px;
 }
 
+.nav {
+}
+
 .nav:hover {
-  color: #516df6;
+  color: var(--P1);
   cursor: pointer;
+  transition: 0.3s;
 }
 
 /* 글자 네비게이션 컨테이너 */
 
 .navigation {
-  width: auto;
+  width: 285px;
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
+}
+
+.activeNav {
+  font-weight: 700;
 }

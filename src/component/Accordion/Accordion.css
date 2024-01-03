@@ -1,36 +1,37 @@
-.Accordion{
-    background-color: var(--G8);
+.Accordion {
+  background-color: var(--G8);
+  cursor: pointer;
 }
 
-.Question{
-    border-top: 0.5px solid var(--G5);
-    font-size: 20px;
-    justify-content: space-between;
-    height: 70px;
+.Question {
+  border-top: 0.5px solid var(--G5);
+  font-size: 20px;
+  justify-content: space-between;
+  height: 70px;
 }
-.Answer{
-    font-size: 18px;
-    transition: all 0.4s ease;
+.Answer {
+  font-size: 18px;
+  transition: all 0.4s ease;
 }
 
-.layout{
-    color: var(--G1);
-    display: flex;
-    align-items: center;
-    padding: 0px 32px;
-    border-bottom: 0.5px solid var(--G5);
+.layout {
+  color: var(--G1);
+  display: flex;
+  align-items: center;
+  padding: 0px 32px;
+  border-bottom: 0.5px solid var(--G5);
 }
 
 ol {
-    padding-left: 22px;
+  padding-left: 22px;
 }
 
-.active{
-    background-color: var(--G7);
+.active {
+  background-color: var(--G7);
 }
 
-.active .Answer{
-    height: 0px;
-    overflow: hidden;
-    border: none;
+.active .Answer {
+  height: 0px;
+  overflow: hidden;
+  border: none;
 }

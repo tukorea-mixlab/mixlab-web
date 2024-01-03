@@ -12,7 +12,6 @@ import Section from "../component/Section/Section";
 import Carousel from "../component/Carousel/Carousel";
 import SixCarousel from "../component/Carousel/Sixcarousel";
 import Footer from "../component/Footer/Footer";
-// import challenge from "../Img/Icons/challenge.png";
 
 export default function Mainpage() {
   const Identity = [

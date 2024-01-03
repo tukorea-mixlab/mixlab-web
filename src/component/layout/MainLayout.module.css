@@ -1,10 +1,9 @@
-.malinlayout{
-    position: relative;
+.malinlayout {
+  position: relative;
 }
-@media screen and (max-width: 660px){
-    .mainlayout{
-        max-width: 600px;
-        overflow: hidden;
-       
-    }
+@media screen and (max-width: 660px) {
+  .mainlayout {
+    max-width: 600px;
+    overflow: hidden;
+  }
 }
