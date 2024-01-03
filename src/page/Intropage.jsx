@@ -346,6 +346,7 @@ export default function intropage() {
             </div>
           }
         />
+        
       </div>
     </div>
   );

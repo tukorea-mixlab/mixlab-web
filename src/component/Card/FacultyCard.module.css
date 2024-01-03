@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+.FacultyCard{
+  color: var(--G1);
+  background-color: var(--G9);
+  display: flex;
+  padding: 35px 30px;
+  gap: 30px;
+  border-radius: 12px;
+  font-weight: 300;
+}
+
+.Photo img{
+  border-radius: 12px;
+  width: 175px;
+  height: 233px;
+}
+
+.Content{
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.Content h1{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.Info{
+  display: flex;
+  gap: 30px;
+}
+
+.professor{
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+
+.professor>div{
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.professor b{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.History {
+  font-size: 20px;
+  flex: 50%;
+}
