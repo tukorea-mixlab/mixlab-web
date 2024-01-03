@@ -17,8 +17,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route element={<MainLayout />}>
-        <Route index element={<Peoplepage />}></Route>
         <Route index element={<Mainpage />}></Route>
+        <Route path="/people" element={<Peoplepage />}></Route>
         <Route path="/intro" element={<Intropage />}></Route>
         <Route path="/project" element={<Projectpage />}></Route>
       </Route>
