@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import "./intropage.css";
+import "./newspage.css";
 import Title from "../component/Title";
 import computer from "../Img/Icons/computer.png";
 import facturing from "../Img/Icons/facturing.png";
@@ -14,7 +14,7 @@ import SixCarousel from "../component/Carousel/Sixcarousel";
 import Footer from "../component/Footer/Footer";
 // import challenge from "../Img/Icons/challenge.png";
 
-export default function Intropage() {
+export default function Newspage() {
   const data = {
     subText: "Overview",
     h3: "What is MIX LAB",

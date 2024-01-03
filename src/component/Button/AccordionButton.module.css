@@ -1,12 +1,13 @@
-.accordionButton{
-  background:none;
+.accordionButton {
+  background: none;
   border: none;
+  cursor: pointer;
 }
 
-.accordionButton img{
+.accordionButton img {
   transform: rotate(180deg);
 }
 
-.accordionButton .active img{
+.accordionButton .active img {
   transform: rotate(0deg);
 }

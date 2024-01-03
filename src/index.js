@@ -7,8 +7,8 @@ import Intropage from "./page/Intropage";
 import Newspage from "./page/Newspage";
 import Peoplepage from "./page/Peoplepage";
 
-
 import Header from "../src/component/Header/Header";
+import Projectpage from "./page/Projectpage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
@@ -18,6 +18,9 @@ root.render(
     <Routes>
       <Route element={<MainLayout />}>
         <Route index element={<Peoplepage />}></Route>
+        <Route index element={<Mainpage />}></Route>
+        <Route path="/intro" element={<Intropage />}></Route>
+        <Route path="/project" element={<Projectpage />}></Route>
       </Route>
     </Routes>
   </BrowserRouter>
