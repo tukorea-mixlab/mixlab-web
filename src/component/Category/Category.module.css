@@ -27,9 +27,6 @@
   transition: all 0.3s;
 }
 
-.Category {
-}
-
 .active .question {
   background-color: var(--G7);
   color: var(--G1);

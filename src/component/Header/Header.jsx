@@ -52,9 +52,9 @@ function Header(props) {
               title="people"
               to="/people"
               onClick={function () {
-                // nav("/Archive");
-                // scrollToTop(); // Nav 클릭 시 스크롤 초기화
-                // window.location.reload();
+                nav("/People");
+                scrollToTop(); // Nav 클릭 시 스크롤 초기화
+                window.location.reload();
               }}
             />
             <Nav
