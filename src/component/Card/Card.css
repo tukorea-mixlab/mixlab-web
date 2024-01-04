@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  border-radius: 8px;
 }
 
 .cardImg {
@@ -12,43 +13,90 @@
   height: 280px;
   flex-shrink: 0;
   border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
 }
 
-.cardTextContainer {
+.cardinfoContainer {
   display: flex;
   width: 380px;
   height: 157px;
   padding: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.cardTextContainer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-height: 68px;
   flex-direction: column;
   gap: 8px;
   align-items: flex-start;
   flex-shrink: 0;
 }
 
+.cardContainer:hover {
+  background-color: var(--G7);
+  cursor: pointer;
+}
+
+.cardContainer:hover .cardIntro > span {
+  text-overflow: hidden;
+  text-wrap: nowrap;
+  animation: spinning 8s linear infinite;
+}
+.cardContainer:hover .cardTitle > span {
+  text-overflow: hidden;
+  text-wrap: nowrap;
+  animation: spinning 5s linear infinite;
+}
+
 .cardTitle {
+  overflow: hidden;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.cardTitle > span {
+  max-width: 100%;
+
   color: var(--G1);
   text-overflow: ellipsis;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .cardIntro {
   overflow: hidden;
+  max-width: 100%;
+  min-width: 100%;
   color: var(--G4);
-  text-overflow: ellipsis;
+}
+.cardIntro > span {
+  max-width: 100%;
 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  text-overflow: ellipsis;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.32px;
 }
-
 .cardMore {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 8px;
   color: var(--G1);
@@ -70,3 +118,41 @@
   width: 15px;
   height: 15px;
 }
+
+/* 카드 리스트 css */
+
+.maincontainer {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 60px 30px;
+  flex-wrap: wrap;
+}
+/* 애니메이션 */
+/* 
+@keyframes spinning {
+  0% {
+    transform: translateX(0%);
+  }
+  49% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  51% {
+    transform: translateX(-100%);
+    display: none;
+    opacity: 0;
+  }
+  52% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}  
+*/
