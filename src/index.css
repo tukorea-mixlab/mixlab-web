@@ -53,3 +53,13 @@ body {
   gap: var(--content-margin);
   margin: 150px auto;
 }
+
+h3 {
+  margin: 0;
+  color: var(--G1);
+  text-align: var(--align);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

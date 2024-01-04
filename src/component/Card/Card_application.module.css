@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap");
 
-.Background{
-  background-image: url('../../Img/Liquid.png');
+.Background {
+  background-image: url("../../Img/Liquid.png");
   background-size: cover;
   background-position: center;
   color: var(--G1);
@@ -11,17 +11,17 @@
   margin-bottom: 30px;
 }
 
-.Background h1{
+.Background h1 {
   font-size: 32px;
   font-weight: 500;
 }
 
-.Background h5{
+.Background h5 {
   font-size: 18px;
   font-weight: 400;
 }
 
-.wrap{
+.wrap {
   display: flex;
   gap: 30px;
   color: var(--G1);
@@ -30,44 +30,43 @@
   min-height: 380px;
 }
 
-
-.cardTitle{
+.ApplycardTitle {
   background-color: var(--G7);
   padding: 22px 40px;
 }
 
-.cardContent{
+.ApplycardContent {
   margin-top: 32px;
   padding: 0px 36px 0px 60px;
   margin-bottom: 100px;
 }
 
-.cardButton{
+.ApplycardButton {
   position: absolute;
   right: 36px;
   bottom: 30px;
 }
 
-h3{
+h4 {
   font-size: 24px;
-  font-weight: 400; 
+  font-weight: 400;
 }
-h4{
+h5 {
   font-size: 16px;
-  font-weight: 300; 
+  font-weight: 300;
 }
 
-ul{
+ul {
 }
 
-li{
+li {
   line-height: 130%;
   font-weight: 300;
   font-size: 18px;
   margin-bottom: 8px;
 }
 
-.cardContainer{
+.ApplycardContainer {
   flex: 1;
   border-radius: 12px;
   border: 1px solid var(--G1);
@@ -75,7 +74,7 @@ li{
   position: relative;
 }
 
-.cardButton{
+.ApplycardButton {
   display: flex;
   gap: 12px;
   align-items: center;
