@@ -1,11 +1,14 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import "./Peoplepage.css";
 import hanjongkimImg from '../Img/People/hanjongkim.png'
 import moonhwanleeImg from '../Img/People/moonhwanlee.png'
 
 import FacultyCard from "../component/Card/FacultyCard";
+import StudentCards from "../component/Card/StudentCards";
+
 import Section from "../component/Section/Section";
-import Footer from "../component/Footer/Footer";
+
+import { db, storage } from "../firebase";
 
 export default function People() {
 
@@ -38,6 +41,22 @@ export default function People() {
     },
   ];
 
+
+  const [data, setData] = useState([]);
+  useEffect(function () {
+    let Datas = [];
+    db.collection("post")
+      .get()
+      .then(function (qs) {
+        qs.forEach((doc) => {
+          Datas.push(doc.data());
+        });
+        setData(Datas);
+        console.log(Datas);
+      });
+  }, []);
+
+
   return (
     <div className="PageWrapper">
       <div className="introContainer">
@@ -56,14 +75,38 @@ export default function People() {
           type={"center"}
           className={"identity"}
           children={
-            <div>
+            <div className="FacultyCard">
               <FacultyCard data = {professorData[0]}></FacultyCard>
               <FacultyCard data = {professorData[1]}></FacultyCard>
             </div>
         }
         />
+
+        <Section
+          h3={"MIX LAB 학부생 연구원"}
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={
+            <div className="studentCard">
+              <StudentCards></StudentCards>
+            </div>
+          }
+          />
+
+        <Section
+          h3={"MIX LAB의 졸업생"}
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={
+            <div className="studentCard">
+              <StudentCards></StudentCards>
+            </div>
+          }
+          />
+
       </div>
-      <Footer></Footer>
     </div>
   );
 }

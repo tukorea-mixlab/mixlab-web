@@ -32,7 +32,6 @@ function Category(props){
         </div>
 
         <Dropdown visibility={dropdownVisibility} maxHeight={maxHeight}>
-        {/* props. */}
         <div ref={Height}>
           {props.Hyphen ? <ol type="A">
             <li>{props.answer}</li>
