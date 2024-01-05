@@ -42,17 +42,30 @@ export default function People() {
   ];
 
 
-  const [data, setData] = useState([]);
+  const [dataStudent, setDataStudent] = useState([]);
+  const [dataGraduate, setDataGraduate] = useState([]);
+
   useEffect(function () {
     let Datas = [];
-    db.collection("post")
+    db.collection("student")
       .get()
       .then(function (qs) {
         qs.forEach((doc) => {
           Datas.push(doc.data());
         });
-        setData(Datas);
-        console.log(Datas);
+        setDataStudent(Datas);
+      });
+  }, []);
+  
+  useEffect(function () {
+    let Datas = [];
+    db.collection("graduate")
+      .get()
+      .then(function (qs) {
+        qs.forEach((doc) => {
+          Datas.push(doc.data());
+        });
+        setDataGraduate(Datas);
       });
   }, []);
 
@@ -89,7 +102,7 @@ export default function People() {
           className={"identity"}
           children={
             <div className="studentCard">
-              <StudentCards></StudentCards>
+              <StudentCards data = {dataGraduate}></StudentCards>
             </div>
           }
           />
@@ -101,7 +114,7 @@ export default function People() {
           className={"identity"}
           children={
             <div className="studentCard">
-              <StudentCards></StudentCards>
+              <StudentCards data = {dataStudent}></StudentCards>
             </div>
           }
           />
