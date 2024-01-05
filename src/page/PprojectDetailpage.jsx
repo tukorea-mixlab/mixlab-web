@@ -22,6 +22,17 @@ export default function ProjectDetailpage() {
     thumbnail: "",
   });
 
+  const link1open = () => {
+    const url = post.link1;
+
+    window.open(url, "_blank");
+  };
+
+  const link2open = () => {
+    const url = post.lin2;
+
+    window.open(url, "_blank");
+  };
   //포스트의 데이터를 생성될때 받아옴
   useEffect(() => {
     db.collection("project_works")
@@ -47,6 +58,33 @@ export default function ProjectDetailpage() {
           <div className="projectworkname">
             <span>{post.name}</span>
           </div>
+        </div>
+
+        <div className="projectimgcontainer">
+          <div
+            className="porjectimg mainImg"
+            style={{
+              backgroundImage: `url(${post.mainimg})`,
+            }}
+          ></div>
+          <div
+            className="porjectimg subimg"
+            style={{
+              backgroundImage: `url(${post.subimg})`,
+            }}
+          ></div>
+        </div>
+
+        <div className="projectworkinfo">
+          <span>{post.info}</span>
+        </div>
+
+        <div className="projectworklink1">
+          <span>{post.link1}</span>
+        </div>
+
+        <div className="projectworklink2">
+          <span>{post.link2}</span>
         </div>
       </div>
     </div>

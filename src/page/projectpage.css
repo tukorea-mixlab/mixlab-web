@@ -39,3 +39,27 @@
   align-items: flex-start;
   gap: 16px;
 }
+
+.projectworkinfo > span {
+  color: var(--G1, #fff);
+  text-align: justify;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 300;
+  word-break: break-all;
+  line-height: 24px; /* 133.333% */
+}
+
+.projectimgcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.porjectimg {
+  width: 585px;
+  height: 326px;
+
+  background-size: cover;
+  border-radius: 4px;
+}

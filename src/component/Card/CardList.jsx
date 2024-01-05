@@ -9,7 +9,7 @@ export default function CardList(props) {
   const list = props.data.map(function (item) {
     const projectlink = () => {
       const url = item.link;
-
+      
       window.open(url, "_blank");
     };
     return (
