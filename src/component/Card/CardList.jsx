@@ -18,6 +18,9 @@ export default function CardList(props) {
         key={item.title}
         title={item.title}
         info={item.info}
+
+        // 카드에게 type 전달 2024-01-05(22:41)
+        type={props.type}
         onClick={function () {
           console.log(item.title + "이동");
 

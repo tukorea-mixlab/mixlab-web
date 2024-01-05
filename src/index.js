@@ -22,6 +22,7 @@ root.render(
         <Route path="/people" element={<Peoplepage />}></Route>
         <Route path="/intro" element={<Intropage />}></Route>
         <Route path="/project" element={<Projectpage />}></Route>
+        <Route path="/news" element={<Newspage />}></Route>
         <Route path="/project/:id" element={<ProjectDetailpage />}></Route>
       </Route>
     </Routes>
