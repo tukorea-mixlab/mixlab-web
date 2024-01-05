@@ -63,3 +63,14 @@
   background-size: cover;
   border-radius: 4px;
 }
+
+.projectworklink {
+  text-decoration: underline;
+  color: var(--G5, #b5b5b5);
+}
+
+.linkcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
