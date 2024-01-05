@@ -6,6 +6,7 @@ import MainLayout from "./component/layout/MainLayout";
 import Intropage from "./page/Intropage";
 import Newspage from "./page/Newspage";
 import Peoplepage from "./page/Peoplepage";
+import ProjectDetailpage from "./page/PprojectDetailpage";
 
 import Header from "../src/component/Header/Header";
 import Projectpage from "./page/Projectpage";
@@ -21,6 +22,7 @@ root.render(
         <Route path="/people" element={<Peoplepage />}></Route>
         <Route path="/intro" element={<Intropage />}></Route>
         <Route path="/project" element={<Projectpage />}></Route>
+        <Route path="/project/:id" element={<ProjectDetailpage />}></Route>
       </Route>
     </Routes>
   </BrowserRouter>

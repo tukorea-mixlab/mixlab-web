@@ -22,6 +22,7 @@ export default function Card(props) {
         style={{
           backgroundImage: `url(${props.thumbnail})`,
         }}
+        onClick={props.onClick}
       ></div>
       <div className="cardinfoContainer">
         <div className="cardTextContainer">
