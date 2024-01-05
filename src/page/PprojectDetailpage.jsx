@@ -79,12 +79,14 @@ export default function ProjectDetailpage() {
           <span>{post.info}</span>
         </div>
 
-        <div className="projectworklink1">
-          <span>{post.link1}</span>
-        </div>
+        <div className="linkcontainer">
+          <div className="projectworklink">
+            <span>{post.link1}</span>
+          </div>
 
-        <div className="projectworklink2">
-          <span>{post.link2}</span>
+          <div className="projectworklink">
+            <span>{post.link2}</span>
+          </div>
         </div>
       </div>
     </div>
