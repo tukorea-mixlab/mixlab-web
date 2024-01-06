@@ -30,7 +30,7 @@ export default function Card(props) {
             <span>{props.title || "sad"}</span>
           </div>
           <div className="cardIntro">
-            <span>{props.info || "ss"}</span>
+            <span>{props.info || ""}</span>
           </div>
         </div>
         <div className="cardMore">

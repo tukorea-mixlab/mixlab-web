@@ -15,16 +15,10 @@
   border-radius: 8px;
   background-size: cover;
   background-position: center;
-  background-color: #fff;
 }
 
-.award{
-  width: 585px;
-}
 
-.award .cardImg{
-  width: 585px;
-}
+
 
 .cardinfoContainer {
   display: flex;
@@ -57,10 +51,10 @@
   text-wrap: nowrap;
   animation: spinning 8s linear infinite;
 }
+
 .cardContainer:hover .cardTitle > span {
-  text-overflow: hidden;
   text-wrap: nowrap;
-  animation: spinning 5s linear infinite;
+  animation: spinning 5s linear infinite; 
 }
 
 .cardTitle {
@@ -71,9 +65,7 @@
 
 .cardTitle > span {
   max-width: 100%;
-
   color: var(--G1);
-  text-overflow: ellipsis;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -83,12 +75,15 @@
   -webkit-line-clamp: 1;
 }
 
+
+
 .cardIntro {
   overflow: hidden;
   max-width: 100%;
   min-width: 100%;
   color: var(--G4);
 }
+
 .cardIntro > span {
   max-width: 100%;
 
@@ -96,7 +91,6 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
 
-  text-overflow: ellipsis;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -171,3 +165,36 @@
   }
 }  
 */
+
+
+/* new페이지의 어워드일 경우에 해당 css를 추가 */
+.award{
+  width: 585px;
+}
+
+.award .cardImg{
+  width: 585px;
+  height: 332px;
+}
+
+.award .cardinfoContainer .cardIntro{
+  display: none;
+}
+
+.award .cardinfoContainer{
+  width: 585px;
+}
+
+.award:hover .cardTitle > span{
+  display: inline-block;
+  white-space: pre-line;
+  word-break: keep-all;
+}
+
+/* https://smartstudio.tech/deepdive-linebreak-css-about-language/ */
+
+
+/* new페이지의 뉴스일 경우에 해당 css를 추가 */
+.news{
+  
+}
