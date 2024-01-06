@@ -18,7 +18,8 @@ export default function CardList(props) {
         key={item.title}
         title={item.title}
         info={item.info}
-
+        //메인 뉴스(가로로 긴거)타입 추가
+        mainNews={item.mainNews}
         // 카드에게 type 전달 2024-01-05(22:41)
         type={props.type}
         onClick={function () {

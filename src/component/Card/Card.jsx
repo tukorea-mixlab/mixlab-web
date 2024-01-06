@@ -7,7 +7,7 @@ export default function Card(props) {
 
   return (
     <div
-      className={`cardContainer ${props.type}`}
+      className={`cardContainer ${props.type} ${props.mainNews?'mainNews':''}`}
       // onMouseEnter={(e) => {
       //   setCardhover(true);
       //   console.log(cardhover);

@@ -196,5 +196,54 @@
 
 /* new페이지의 뉴스일 경우에 해당 css를 추가 */
 .news{
-  
+  height: 280px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.news .cardinfoContainer{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9)0%, rgba(0, 0, 0, 0.85) 10% ,rgba(0, 0, 0, 0) 100%);
+}
+
+.news .cardTextContainer{
+  position: absolute;
+  left: 0px;
+  padding: 0px 24px;
+  bottom: 62px;
+  font-size: 18px;
+}
+
+.news .cardTextContainer .cardTitle>span{
+  font-size: 18px;
+}
+
+.news .cardIntro{
+  display: none;
+}
+
+.news .cardMore{
+  position: absolute;
+  left: 24px;
+  bottom: 12px;
+}
+
+
+/* 메인뉴스 */
+.mainNews{
+  width: 100%;
+  background-color: aqua;
+  order:-1;
+}
+
+.mainNews .cardImg{
+  width: 100%;
+}
+
+.mainNews .cardinfoContainer{
+  width: 100%;
 }
