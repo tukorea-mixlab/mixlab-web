@@ -67,6 +67,7 @@
 .projectworklink {
   text-decoration: underline;
   color: var(--G5, #b5b5b5);
+  cursor: pointer;
 }
 
 .linkcontainer {
