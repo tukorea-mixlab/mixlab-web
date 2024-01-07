@@ -74,3 +74,23 @@
   flex-direction: column;
   gap: 8px;
 }
+
+/* 어워드디테일페이지 위에 있는 뱃지 */
+.awardInfo{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.awardInfo span{
+  background-color: var(--P1);
+  padding: 4px 16px;
+  border-radius: 100px;
+  color: var(--G1);
+  border: 2px solid var(--P1);
+}
+
+.awardInfo span:nth-child(2){
+  background-color: var(--G8);
+  color: var(--P1);
+}

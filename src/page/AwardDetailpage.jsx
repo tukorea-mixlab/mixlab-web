@@ -35,7 +35,7 @@ export default function ProjectDetailpage() {
   };
   //포스트의 데이터를 생성될때 받아옴
   useEffect(() => {
-    db.collection("project_works")
+    db.collection("award")
       .doc(postId)
       .get()
       .then((doc) => {
@@ -48,6 +48,10 @@ export default function ProjectDetailpage() {
     <div className="PageWrapper">
       <div className="PageContainer projectWork">
         <div className="projecttitlecontainer">
+          <div className="awardInfo">
+            <span>2020</span>
+            <span>우수상</span>
+          </div>
           <div className="projectworktitle">
             <span>{post.title}</span>
           </div>

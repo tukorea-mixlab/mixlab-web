@@ -35,7 +35,7 @@ export default function ProjectDetailpage() {
   };
   //포스트의 데이터를 생성될때 받아옴
   useEffect(() => {
-    db.collection("project_works")
+    db.collection("news")
       .doc(postId)
       .get()
       .then((doc) => {

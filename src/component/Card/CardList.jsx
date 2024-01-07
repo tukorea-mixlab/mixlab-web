@@ -22,12 +22,11 @@ export default function CardList(props) {
         // 카드에게 type 전달 2024-01-05(22:41)
         type={props.type}
         onClick={function () {
-          console.log(item.title + "이동");
 
           props.type === "project"
             ? projectlink()
             
-            // news일때, new페이지의 그 프로젝트 페이지로 이동
+            // award일때, award페이지의 그 프로젝트 페이지로 이동
             : props.type === "award"
             ? nav("/award/" + item.title)
             
