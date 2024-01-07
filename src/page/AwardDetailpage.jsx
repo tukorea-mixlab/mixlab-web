@@ -49,8 +49,8 @@ export default function ProjectDetailpage() {
       <div className="PageContainer projectWork">
         <div className="projecttitlecontainer">
           <div className="awardInfo">
-            <span>2020</span>
-            <span>우수상</span>
+            <span>{post.year}</span>
+            <span>{post.awardType}</span>
           </div>
           <div className="projectworktitle">
             <span>{post.title}</span>
