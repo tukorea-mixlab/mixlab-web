@@ -24,16 +24,18 @@ export default function ProjectDetailpage() {
 
   const link1open = () => {
     const url = post.link1;
+
     window.open(url, "_blank");
   };
 
   const link2open = () => {
     const url = post.link2;
+
     window.open(url, "_blank");
   };
   //포스트의 데이터를 생성될때 받아옴
   useEffect(() => {
-    db.collection("project_works")
+    db.collection("news")
       .doc(postId)
       .get()
       .then((doc) => {
@@ -78,22 +80,12 @@ export default function ProjectDetailpage() {
         </div>
 
         <div className="linkcontainer">
-          <div
-            className="projectworklink"
-            onClick={() => {
-              link1open();
-            }}
-          >
-            <span>{post.link1name}</span>
+          <div className="projectworklink">
+            <span>{post.link1}</span>
           </div>
 
-          <div
-            className="projectworklink"
-            onClick={() => {
-              link2open();
-            }}
-          >
-            <span>{post.link2name}</span>
+          <div className="projectworklink">
+            <span>{post.link2}</span>
           </div>
         </div>
       </div>

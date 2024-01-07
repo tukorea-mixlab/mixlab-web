@@ -7,6 +7,7 @@ export default function Card(props) {
 
   return (
     <div
+      onClick={props.onClick}
       className={`cardContainer ${props.type} ${props.mainNews?'mainNews':''}`}
       // onMouseEnter={(e) => {
       //   setCardhover(true);
@@ -22,7 +23,6 @@ export default function Card(props) {
         style={{
           backgroundImage: `url(${props.thumbnail})`,
         }}
-        onClick={props.onClick}
       ></div>
       <div className="cardinfoContainer">
         <div className="cardTextContainer">

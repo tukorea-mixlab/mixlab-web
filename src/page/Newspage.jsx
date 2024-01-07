@@ -12,7 +12,7 @@ export default function Newspage() {
   const [awardData, setAwardData] = useState([]);
   useEffect(function () {
     let Datas = [];
-    db.collection("awads")
+    db.collection("award")
       .get()
       .then(function (qs) {
         qs.forEach((doc) => {
