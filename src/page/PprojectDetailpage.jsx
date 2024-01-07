@@ -29,10 +29,6 @@ export default function ProjectDetailpage() {
 
   const link2open = () => {
     const url = post.link2;
-<<<<<<< HEAD
-=======
-
->>>>>>> f95af5629cfd60096c9bb126968df8b6e83033f9
     window.open(url, "_blank");
   };
   //포스트의 데이터를 생성될때 받아옴
