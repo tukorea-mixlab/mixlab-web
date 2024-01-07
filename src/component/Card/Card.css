@@ -198,7 +198,7 @@
 .news{
   height: 280px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -236,8 +236,7 @@
 /* 메인뉴스 */
 .mainNews{
   width: 100%;
-  background-color: aqua;
-  order:-1;
+  order: -1;
 }
 
 .mainNews .cardImg{

@@ -24,6 +24,8 @@ root.render(
         <Route path="/project" element={<Projectpage />}></Route>
         <Route path="/news" element={<Newspage />}></Route>
         <Route path="/project/:id" element={<ProjectDetailpage />}></Route>
+        <Route path="/news/:id" element={<ProjectDetailpage />}></Route>
+        <Route path="/award/:id" element={<ProjectDetailpage />}></Route>
       </Route>
     </Routes>
   </BrowserRouter>

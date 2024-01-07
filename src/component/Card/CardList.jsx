@@ -9,7 +9,6 @@ export default function CardList(props) {
   const list = props.data.map(function (item) {
     const projectlink = () => {
       const url = item.link;
-      
       window.open(url, "_blank");
     };
     return (
@@ -27,6 +26,15 @@ export default function CardList(props) {
 
           props.type === "project"
             ? projectlink()
+            
+            // news일때, new페이지의 그 프로젝트 페이지로 이동
+            : props.type === "award"
+            ? nav("/award/" + item.title)
+            
+            // news일때, new페이지의 그 프로젝트 페이지로 이동
+            : props.type === "news"
+            ? nav("/news/" + item.title)
+            
             : nav("/project/" + item.title);
         }}
       ></Card>
