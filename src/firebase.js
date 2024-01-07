@@ -17,6 +17,5 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const storage = firebaseApp.storage(); // Storage 모듈 초기화
 
-console.log(db)
 
 export { firebase, firebaseApp, db, storage };

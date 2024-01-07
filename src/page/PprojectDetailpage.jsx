@@ -29,13 +29,13 @@ export default function ProjectDetailpage() {
   };
 
   const link2open = () => {
-    const url = post.lin2;
+    const url = post.link2;
 
     window.open(url, "_blank");
   };
   //포스트의 데이터를 생성될때 받아옴
   useEffect(() => {
-    db.collection("project_works")
+    db.collection("award")
       .doc(postId)
       .get()
       .then((doc) => {

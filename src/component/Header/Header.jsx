@@ -67,6 +67,15 @@ function Header(props) {
                 window.location.reload();
               }}
             />
+            <Nav
+              title="news"
+              to="/news"
+              onClick={function () {
+                nav("/news");
+                scrollToTop(); // Nav 클릭 시 스크롤 초기화
+                window.location.reload();
+              }}
+            />
           </div>
         </div>
       </div>
