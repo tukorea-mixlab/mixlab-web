@@ -10,6 +10,7 @@ import CardList from "../component/Card/CardList";
 export default function Newspage() {
 
   const [awardData, setAwardData] = useState([]);
+
   useEffect(function () {
     let Datas = [];
     db.collection("award")
@@ -23,6 +24,7 @@ export default function Newspage() {
   }, []);
 
   const [newsData, setNewsData] = useState([]);
+  
   useEffect(function () {
     let Datas = [];
     db.collection("news")
