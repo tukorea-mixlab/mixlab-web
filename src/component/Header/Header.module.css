@@ -59,7 +59,7 @@
 /* 글자 네비게이션 컨테이너 */
 
 .navigation {
-  width: 285px;
+  width: 380px;
   display: flex;
   justify-content: space-between;
 }

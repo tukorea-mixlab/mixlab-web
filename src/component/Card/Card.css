@@ -16,8 +16,10 @@
   border-radius: 8px;
   background-size: cover;
   background-position: center;
-  background-color: #fff;
 }
+
+
+
 
 .cardinfoContainer {
   display: flex;
@@ -50,10 +52,10 @@
   text-overflow: hidden;
   text-wrap: nowrap;
 }
+
 .cardContainer:hover .cardTitle > span {
-  text-overflow: hidden;
   text-wrap: nowrap;
-  animation: spinning 5s linear infinite;
+  animation: spinning 5s linear infinite; 
 }
 
 .cardTitle {
@@ -64,9 +66,7 @@
 
 .cardTitle > span {
   max-width: 100%;
-
   color: var(--G1);
-  text-overflow: ellipsis;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -76,12 +76,15 @@
   -webkit-line-clamp: 1;
 }
 
+
+
 .cardIntro {
   overflow: hidden;
   max-width: 100%;
   min-width: 100%;
   color: var(--G4);
 }
+
 .cardIntro > span {
   max-width: 100%;
 
@@ -89,7 +92,6 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
 
-  text-overflow: ellipsis;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -121,7 +123,6 @@
 }
 
 /* 카드 리스트 css */
-
 .maincontainer {
   display: flex;
   align-items: flex-end;
@@ -129,6 +130,14 @@
   gap: 60px 30px;
   flex-wrap: wrap;
 }
+
+/* 2024-01-05 (22:03) 추가 */
+/* 3열에서 -> 2열로 */
+.twoLow {
+
+}
+
+
 /* 애니메이션 */
 /* 
 @keyframes spinning {
@@ -155,4 +164,90 @@
   100% {
     transform: translateX(0%);
   }
+<<<<<<< HEAD
 } */
+=======
+}  
+*/
+
+
+/* new페이지의 어워드일 경우에 해당 css를 추가 */
+.award{
+  width: 585px;
+}
+
+.award .cardImg{
+  width: 585px;
+  height: 332px;
+}
+
+.award .cardinfoContainer .cardIntro{
+  display: none;
+}
+
+.award .cardinfoContainer{
+  width: 585px;
+}
+
+.award:hover .cardTitle > span{
+  display: inline-block;
+  white-space: pre-line;
+  word-break: keep-all;
+}
+
+/* https://smartstudio.tech/deepdive-linebreak-css-about-language/ */
+
+
+/* new페이지의 뉴스일 경우에 해당 css를 추가 */
+.news{
+  height: 280px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.news .cardinfoContainer{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9)0%, rgba(0, 0, 0, 0.85) 10% ,rgba(0, 0, 0, 0) 100%);
+}
+
+.news .cardTextContainer{
+  position: absolute;
+  left: 0px;
+  padding: 0px 24px;
+  bottom: 62px;
+  font-size: 18px;
+}
+
+.news .cardTextContainer .cardTitle>span{
+  font-size: 18px;
+}
+
+.news .cardIntro{
+  display: none;
+}
+
+.news .cardMore{
+  position: absolute;
+  left: 24px;
+  bottom: 12px;
+}
+
+
+/* 메인뉴스 */
+.mainNews{
+  width: 100%;
+  order: -1;
+}
+
+.mainNews .cardImg{
+  width: 100%;
+}
+
+.mainNews .cardinfoContainer{
+  width: 100%;
+}
+>>>>>>> f95af5629cfd60096c9bb126968df8b6e83033f9

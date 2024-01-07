@@ -8,10 +8,10 @@ export default function StudentCards(props) {
   function StudentCard(props) {
     return (
       <div className={styles.StudentCard}>
-        <img src="" alt="" />
+        <img onerror="this.onerror=null;" />
         <div className={styles.StudentCard_content}>
           <div>
-            <div className={styles.name}>황윤주</div>
+            <div className={styles.name}>{props.data.name}</div>
             <div className={styles.email}>useremail@tukorea.ac.kr</div>
           </div>
           <div>
@@ -28,12 +28,11 @@ export default function StudentCards(props) {
   // 학생 개개인 카드 여러개 묶어놓은 부분 (2024-01-05 02:37)
   return (
     <div className={styles.StudentCards}>
-      <StudentCard></StudentCard>
-      <StudentCard></StudentCard>
-      <StudentCard></StudentCard>
-      <StudentCard></StudentCard>
-      <StudentCard></StudentCard>
-      <StudentCard></StudentCard>
+      {props.data.map(Data => (
+        <StudentCard
+          data = {Data}
+        ></StudentCard>
+      ))}
     </div>
   );
 }
