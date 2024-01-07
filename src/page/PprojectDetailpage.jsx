@@ -24,13 +24,11 @@ export default function ProjectDetailpage() {
 
   const link1open = () => {
     const url = post.link1;
-
     window.open(url, "_blank");
   };
 
   const link2open = () => {
-    const url = post.lin2;
-
+    const url = post.link2;
     window.open(url, "_blank");
   };
   //포스트의 데이터를 생성될때 받아옴
@@ -80,12 +78,22 @@ export default function ProjectDetailpage() {
         </div>
 
         <div className="linkcontainer">
-          <div className="projectworklink">
-            <span>{post.link1}</span>
+          <div
+            className="projectworklink"
+            onClick={() => {
+              link1open();
+            }}
+          >
+            <span>{post.link1name}</span>
           </div>
 
-          <div className="projectworklink">
-            <span>{post.link2}</span>
+          <div
+            className="projectworklink"
+            onClick={() => {
+              link2open();
+            }}
+          >
+            <span>{post.link2name}</span>
           </div>
         </div>
       </div>

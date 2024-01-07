@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: flex-start;
   border-radius: 8px;
+  transition: 0.4s;
 }
 
 .cardImg {
@@ -42,12 +43,12 @@
 .cardContainer:hover {
   background-color: var(--G7);
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .cardContainer:hover .cardIntro > span {
   text-overflow: hidden;
   text-wrap: nowrap;
-  animation: spinning 8s linear infinite;
 }
 .cardContainer:hover .cardTitle > span {
   text-overflow: hidden;
@@ -135,24 +136,23 @@
     transform: translateX(0%);
   }
   49% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     opacity: 1;
   }
   50% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
   51% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     display: none;
     opacity: 0;
   }
   52% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     opacity: 1;
   }
   100% {
     transform: translateX(0%);
   }
-}  
-*/
+} */
