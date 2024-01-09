@@ -10,6 +10,9 @@
 .mainContainer {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -32,11 +35,10 @@ h2 {
 }
 
 .textContainer {
-  width: 800px;
+  width: 1200px;
   position: absolute;
   z-index: 8;
-  left: 360px;
-  top: 456px;
+
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
