@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Card_application.module.css";
-import img from "../../Img/Icons/rightArrow.svg";
+import img from "../../Img/Icons/left.svg";
 
 export default function Card_application(props) {
   function Background(props) {

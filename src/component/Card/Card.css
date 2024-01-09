@@ -163,12 +163,13 @@
 /* new페이지의 어워드일 경우에 해당 css를 추가 */
 .award {
   width: 585px;
-  height: auto !important;
+  height: 489px;
 }
 
 .award .cardImg {
   width: 585px;
   height: 332px;
+  /* height: 280px; */
 }
 
 .award .cardinfoContainer .cardIntro {
