@@ -24,6 +24,14 @@
 
   --content-margin: 250px;
   --text-margin: 100px;
+
+  --web1200: 1200px;
+  --web1000: 1024px;
+  --web800: 800px;
+  --webmobiled: 343px;
+  --grid-col-l: 4;
+  --grid-col-m: 3;
+  --grid-col-s: 2;
 }
 
 .center {
@@ -32,6 +40,44 @@
 
 * {
   font-family: Pretendard;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--G1);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--G1);
+  text-align: var(--align);
+}
+
+h3 {
+  color: var(--G1);
+
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+li {
+  line-height: 130%;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
 p {
@@ -57,12 +103,132 @@ body {
   margin: 150px auto;
 }
 
-h3 {
-  margin: 0;
-  color: var(--G1);
-  text-align: var(--align);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+@media screen and (max-width: 1500px) {
+  .PageContainer {
+    max-width: var(--web1200);
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1324px) {
+  .PageContainer {
+    max-width: var(--web1000);
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    margin: 0;
+    color: var(--G1);
+    text-align: var(--align);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  li {
+    line-height: 130%;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .PageContainer {
+    max-width: var(--web800);
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  li {
+    line-height: 130%;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .PageContainer {
+    max-width: var(--webmobiled);
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  li {
+    line-height: 130%;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 10px;
+  }
 }

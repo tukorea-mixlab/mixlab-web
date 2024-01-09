@@ -162,13 +162,11 @@
 
 /* new페이지의 어워드일 경우에 해당 css를 추가 */
 .award {
-  width: 585px;
-  height: 489px;
+  flex: 1 1 33%;
 }
 
 .award .cardImg {
-  width: 585px;
-  height: 332px;
+  width: 100%;
   /* height: 280px; */
 }
 
@@ -177,7 +175,7 @@
 }
 
 .award .cardinfoContainer {
-  width: 585px;
+  width: 100%;
 }
 
 .award:hover .cardTitle > span {

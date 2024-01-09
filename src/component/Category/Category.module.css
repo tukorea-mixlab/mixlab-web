@@ -40,10 +40,30 @@
   padding: 22px 0px;
 }
 
-.OnlyText h3 {
-  font-size: 24px;
-}
-
 .OnlyText div {
   font-size: 16px;
+}
+
+@media screen and (max-width: 1500px) {
+  .OnlyText div {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1324px) {
+  .OnlyText div {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .OnlyText div {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .OnlyText div {
+    font-size: 10px;
+  }
 }

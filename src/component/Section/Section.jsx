@@ -11,7 +11,7 @@ export default function Section(props) {
         width={props.width}
         type={props.type}
         subText={props.subText}
-        h3={props.h3}
+        h2={props.h2}
         information={props.information}
         alignItems={props.alignItems}
         align={props.align || "center"}

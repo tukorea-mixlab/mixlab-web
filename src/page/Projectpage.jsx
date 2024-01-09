@@ -16,13 +16,13 @@ import CardList from "../component/Card/CardList";
 export default function Projectpage() {
   const projectdatas = {
     subText: "Research Project",
-    h3: "MIX LAB 연구 프로젝트",
+    h2: "MIX LAB 연구 프로젝트",
     information: [" 기능대회, 어워드 등 연구 프로젝트 작업물입니다.  "],
   };
 
   const workdatas = {
     subText: "Our Works",
-    h3: "Mixer들의 작품",
+    h2: "Mixer들의 작품",
     information: [
       " 학기 과제물, 개인 작업, 졸업작품등 MIXER들의 작업물입니다. ",
     ],
@@ -69,7 +69,7 @@ export default function Projectpage() {
       <div className="PageContainer">
         <Section
           subText={projectdatas.subText}
-          h3={projectdatas.h3}
+          h2={projectdatas.h2}
           information={projectdatas.information}
           align={"center"}
           type={"center"}
@@ -79,7 +79,7 @@ export default function Projectpage() {
 
         <Section
           subText={workdatas.subText}
-          h3={workdatas.h3}
+          h2={workdatas.h2}
           information={workdatas.information}
           align={"center"}
           type={"center"}

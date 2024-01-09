@@ -12,7 +12,7 @@ import Card_application from "../component/Card/Card_application";
 export default function intropage() {
   const data = {
     subText: "Overview",
-    h3: "What is MIX LAB",
+    h2: "What is MIX LAB",
     information: [
       "MIX LAB은 한국공학대학교 디자인공학부의 인터랙티브 미디어 연구실입니다.",
       <br />,
@@ -90,7 +90,7 @@ export default function intropage() {
       question: "Journal Articles",
       answer: (
         <div>
-          <h3>2021</h3>
+          <h4>2021</h4>
           <div>
             Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design
             Requirements and Conceptual Scenarios of Temporary Negative Pressure
@@ -101,7 +101,7 @@ export default function intropage() {
             Research, 34(4), 225-239.
           </div>
           <br />
-          <h3>2020</h3>
+          <h4>2020</h4>
           <div>
             Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context
             through Everyday Objects. Archives of Design Research, 33(1), 5-15.
@@ -111,13 +111,13 @@ export default function intropage() {
             (IJIDeM), 14(1), 271-283.
           </div>
           <br />
-          <h3>2019</h3>
+          <h4>2019</h4>
           <div>
             Lee, M. H. (2019). Challenges of designing with open data: The case
             of cultural data. Archives of Design Research, 32(3), 57-72.
           </div>
           <br />
-          <h3>2018</h3>
+          <h4>2018</h4>
           <div>
             Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … &
             Nam, T. J. (2018). Flower-Pop: Facilitating casual group
@@ -132,21 +132,21 @@ export default function intropage() {
             10(12), 1687814018804104.
           </div>
           <br />
-          <h3>2016</h3>
+          <h4>2016</h4>
           <div>
             Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital
             Traces for Enhancing Emotional Values of Digital Artifacts. Archives
             of Design Research, 29(2), 65-77.
           </div>
           <br />
-          <h3>2015</h3>
+          <h4>2015</h4>
           <div>
             Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces
             on the appreciation of movie contents. Digital Creativity, 26(3-4),
             287-303.
           </div>
           <br />
-          <h3>2011</h3>
+          <h4>2011</h4>
           <div>
             이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험
             형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design
@@ -159,7 +159,7 @@ export default function intropage() {
       question: "International Conference Proceedings",
       answer: (
         <div>
-          <h3>2021</h3>
+          <h4>2021</h4>
           <div>
             Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design
             Requirements and Conceptual Scenarios of Temporary Negative Pressure
@@ -170,7 +170,7 @@ export default function intropage() {
             Research, 34(4), 225-239.
           </div>
           <br />
-          <h3>2020</h3>
+          <h4>2020</h4>
           <div>
             Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context
             through Everyday Objects. Archives of Design Research, 33(1), 5-15.
@@ -180,13 +180,13 @@ export default function intropage() {
             (IJIDeM), 14(1), 271-283.
           </div>
           <br />
-          <h3>2019</h3>
+          <h4>2019</h4>
           <div>
             Lee, M. H. (2019). Challenges of designing with open data: The case
             of cultural data. Archives of Design Research, 32(3), 57-72.
           </div>
           <br />
-          <h3>2018</h3>
+          <h4>2018</h4>
           <div>
             Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … &
             Nam, T. J. (2018). Flower-Pop: Facilitating casual group
@@ -201,21 +201,21 @@ export default function intropage() {
             10(12), 1687814018804104.
           </div>
           <br />
-          <h3>2016</h3>
+          <h4>2016</h4>
           <div>
             Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital
             Traces for Enhancing Emotional Values of Digital Artifacts. Archives
             of Design Research, 29(2), 65-77.
           </div>
           <br />
-          <h3>2015</h3>
+          <h4>2015</h4>
           <div>
             Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces
             on the appreciation of movie contents. Digital Creativity, 26(3-4),
             287-303.
           </div>
           <br />
-          <h3>2011</h3>
+          <h4>2011</h4>
           <div>
             이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험
             형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design
@@ -228,7 +228,7 @@ export default function intropage() {
       question: "Domestic Conference Proceedings",
       answer: (
         <div>
-          <h3>2021</h3>
+          <h4>2021</h4>
           <div>
             Kim, H. -J., Lee, M. -H., & Nam, T. -J. (2021). Deriving Design
             Requirements and Conceptual Scenarios of Temporary Negative Pressure
@@ -239,7 +239,7 @@ export default function intropage() {
             Research, 34(4), 225-239.
           </div>
           <br />
-          <h3>2020</h3>
+          <h4>2020</h4>
           <div>
             Lee, M. H. (2020). User-Adaptive Data Visualization in Daily Context
             through Everyday Objects. Archives of Design Research, 33(1), 5-15.
@@ -249,13 +249,13 @@ export default function intropage() {
             (IJIDeM), 14(1), 271-283.
           </div>
           <br />
-          <h3>2019</h3>
+          <h4>2019</h4>
           <div>
             Lee, M. H. (2019). Challenges of designing with open data: The case
             of cultural data. Archives of Design Research, 32(3), 57-72.
           </div>
           <br />
-          <h3>2018</h3>
+          <h4>2018</h4>
           <div>
             Lee, M. H., Row, Y. K., Son, O., Lee, U., Kim, J., Jeong, J., … &
             Nam, T. J. (2018). Flower-Pop: Facilitating casual group
@@ -270,21 +270,21 @@ export default function intropage() {
             10(12), 1687814018804104.
           </div>
           <br />
-          <h3>2016</h3>
+          <h4>2016</h4>
           <div>
             Lee, M. H., & Nam, T. J. (2016). Possibility of Utilizing Digital
             Traces for Enhancing Emotional Values of Digital Artifacts. Archives
             of Design Research, 29(2), 65-77.
           </div>
           <br />
-          <h3>2015</h3>
+          <h4>2015</h4>
           <div>
             Lee, M. H., Cha, S., & Nam, T. J. (2015). Impact of digital traces
             on the appreciation of movie contents. Digital Creativity, 26(3-4),
             287-303.
           </div>
           <br />
-          <h3>2011</h3>
+          <h4>2011</h4>
           <div>
             이문환, & 남택진. (2011). 지능형 제품에서의 자동화가 감성적 경험
             형성에 미치는 영향: 지능형 화분 사례를 중심으로. Archives of Design
@@ -308,7 +308,7 @@ export default function intropage() {
       <div className="PageContainer">
         <Section
           subText={data.subText}
-          h3={data.h3}
+          h2={data.h2}
           information={data.information}
           align={"center"}
           type={"center"}
@@ -318,7 +318,7 @@ export default function intropage() {
 
         {/* 자주 묻는 질문들 레이아웃 추가 (12-27 11:46) */}
         <Section
-          h3={"자주 묻는 질문들"}
+          h2={"자주 묻는 질문들"}
           align={"center"}
           type={"center"}
           className={"identity"}
@@ -327,7 +327,7 @@ export default function intropage() {
 
         {/* 믹스랩 추가 (12-31 22:08) */}
         <Section
-          h3={"MIX LAB 역사"}
+          h2={"MIX LAB 역사"}
           align={"center"}
           type={"center"}
           className={"identity"}
@@ -336,7 +336,7 @@ export default function intropage() {
 
         {/*Mix지원하기 추가 (12-31 22:08) */}
         <Section
-          h3={"MIX LAB에 지원하기"}
+          h2={"MIX LAB에 지원하기"}
           align={"center"}
           type={"center"}
           className={"identity"}

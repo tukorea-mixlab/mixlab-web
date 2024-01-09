@@ -11,7 +11,7 @@ export default function Title(props) {
         <p className={styles.subText} style={{ "--align": props.align }}>
           {props.subText}
         </p>
-        <h3 style={{ "--align": props.align }}>{props.h3}</h3>
+        <h2 style={{ "--align": props.align }}>{props.h2}</h2>
       </div>
       <p className={styles.information} style={{ "--align": props.align }}>
         {props.information}

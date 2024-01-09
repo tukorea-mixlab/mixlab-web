@@ -8,7 +8,6 @@ import CardList from "../component/Card/CardList";
 // import challenge from "../Img/Icons/challenge.png";
 
 export default function Newspage() {
-
   const [awardData, setAwardData] = useState([]);
 
   useEffect(function () {
@@ -24,7 +23,7 @@ export default function Newspage() {
   }, []);
 
   const [newsData, setNewsData] = useState([]);
-  
+
   useEffect(function () {
     let Datas = [];
     db.collection("news")
@@ -36,7 +35,6 @@ export default function Newspage() {
         setNewsData(Datas);
       });
   }, []);
-
 
   return (
     <div className="PageWrapper">
@@ -50,27 +48,37 @@ export default function Newspage() {
       </div>
       <div className="PageContainer">
         <Section
-            h3={"MIX LAB 수상 실적"}
-            information={"기능대회, 어워드 등 연구 프로젝트 작업물입니다."}
-            align={"center"}
-            type={"center"}
-            className={"identity"}
-            children={<div>
+          h2={"MIX LAB 수상 실적"}
+          information={"기능대회, 어워드 등 연구 프로젝트 작업물입니다."}
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={
+            <div>
               <CardList type={"award"} data={awardData} />
-            </div>}
-          />
+            </div>
+          }
+        />
 
         <Section
-            subText={"Recent News"}
-            h3={"MIX LAB의 최근 소식"}
-            information={<div>MIXER들의 내외부 활동 및 MIX LAB에서<br/>진행된 연구관련 새로운 소식입니다.</div>}
-            align={"center"}
-            type={"center"}
-            className={"identity"}
-            children={<div>
+          subText={"Recent News"}
+          h2={"MIX LAB의 최근 소식"}
+          information={
+            <div>
+              MIXER들의 내외부 활동 및 MIX LAB에서
+              <br />
+              진행된 연구관련 새로운 소식입니다.
+            </div>
+          }
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={
+            <div>
               <CardList type={"news"} data={newsData} />
-            </div>}
-          />
+            </div>
+          }
+        />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 /* Title style */
 .titleContainer {
   width: 100%;
-  min-width: 408px;
+  /* min-width: 408px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -23,16 +23,6 @@
   line-height: normal;
 }
 
-h3 {
-  margin: 0;
-  color: var(--G1);
-  text-align: var(--align);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
 .information {
   margin: 0;
   color: var(--G6);
@@ -48,12 +38,15 @@ h3 {
 .introList {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
 }
 
 .introContainer {
   padding: 32px 28px;
+
+  min-width: calc(275px - 56px);
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -93,4 +86,31 @@ h3 {
   width: 46px;
   height: 1.5px;
   background-color: var(--P2);
+}
+
+@media screen and (max-width: 1024px) {
+  .introList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: auto;
+  }
+
+  .introContainer {
+    padding: 32px 28px;
+
+    min-width: 275px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    border: 1.5px solid var(--P1);
+    border-radius: 20px;
+    flex: 1 1;
+    flex-basis: 33%;
+  }
+
+  .information {
+    font-size: 14px;
+  }
 }
