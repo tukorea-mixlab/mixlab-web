@@ -163,6 +163,7 @@
 /* new페이지의 어워드일 경우에 해당 css를 추가 */
 .award {
   width: 585px;
+  height: auto !important;
 }
 
 .award .cardImg {
@@ -229,10 +230,8 @@
   bottom: 12px;
 }
 
-
 /* 메인뉴스 */
 .mainNews {
-
   width: 100%;
   order: -1;
 }
