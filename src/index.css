@@ -44,7 +44,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--G8);
+  overflow-x: hidden;
 }
+/* body에 overflow-x: hidden;을 추가해서 가로 스크롤 없앰*/
 
 .PageContainer {
   max-width: 1200px;

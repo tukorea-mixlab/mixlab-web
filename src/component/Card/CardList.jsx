@@ -26,11 +26,11 @@ export default function CardList(props) {
           props.type === "project"
             ? projectlink()
             
-            // award일때, award페이지의 그 프로젝트 페이지로 이동
+            // award일때, award페이지로 이동
             : props.type === "award"
             ? nav("/award/" + item.title)
             
-            // news일때, new페이지의 그 프로젝트 페이지로 이동
+            // news일때, new 페이지로 이동
             : props.type === "news"
             ? nav("/news/" + item.title)
             
