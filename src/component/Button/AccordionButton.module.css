@@ -8,6 +8,6 @@
   transform: rotate(180deg);
 }
 
-.accordionButton .active img {
+.accordionButton.active img {
   transform: rotate(0deg);
 }

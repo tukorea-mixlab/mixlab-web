@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+.MoreCards{
+    display: flex;
+    gap: 30px;
+}
+
+.MoreCard{
+    height: 280px;
+    flex: 1;
+    background-image: url(../../Img/F&Q.png);
+    background-position: center;
+    background-size: cover;
+    padding: 64px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--G1);
+    position: relative;
+}
+
+.MoreCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.MoreCard .title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.MoreCard .title span:nth-child(1){}
+.MoreCard .title span:nth-child(2){
+    color: var(--P1);
+}
+
+.MoreCard .context{
+    margin-bottom: 32px;
+    z-index: 1;
+    font-size: 16px;
+}

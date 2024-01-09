@@ -11,6 +11,7 @@ import Header from "../component/Header/Header";
 import Section from "../component/Section/Section";
 import Carousel from "../component/Carousel/Carousel";
 import SixCarousel from "../component/Carousel/Sixcarousel";
+import MoreCards from "../component/Card/MoreCards";
 import Footer from "../component/Footer/Footer";
 
 export default function Mainpage() {
@@ -102,6 +103,18 @@ export default function Mainpage() {
           type={"center"}
           className={"identity"}
           children={<SixCarousel />}
+        />
+        
+        <Section
+          subText={"More Information"}
+          h3={"MIX LAB 더 알아보기"}
+          information={[
+            "MIX LAB의 구성원과 지원 방법, F&Q입니다.",
+          ]}
+          align={"center"}
+          type={"center"}
+          className={"identity"}
+          children={<MoreCards/>}
         />
       </div>
     </div>

@@ -41,6 +41,7 @@ export default function ProjectDetailpage() {
       .then((doc) => {
         setPost(doc.data());
       });
+      console.log(postId)
   }, []);
 
   console.log(post);

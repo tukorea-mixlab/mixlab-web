@@ -42,6 +42,8 @@
 }
 
 .ApplycardButton {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 36px;
   bottom: 30px;
