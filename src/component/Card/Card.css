@@ -163,6 +163,7 @@
 /* new페이지의 어워드일 경우에 해당 css를 추가 */
 .award {
   width: 585px;
+  height: 489px;
 }
 
 .award .cardImg {
