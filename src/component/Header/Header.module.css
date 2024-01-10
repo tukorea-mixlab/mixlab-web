@@ -60,15 +60,33 @@
 /* 글자 네비게이션 컨테이너 */
 
 .navigation {
-  width: 380px;
+  max-width: 100%;
+  min-width: 320px;
   display: flex;
   justify-content: space-between;
+  gap: 24px;
+  align-items: center;
 }
 
 .activeNav {
   font-weight: 700;
 }
 
+.nav {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.nav:hover {
+  color: var(--P1);
+}
+
+.activeNav {
+  color: var(--P1);
+}
+.menuIcon {
+  display: none;
+}
 @media screen and (max-width: 1324px) {
   .headerContainer {
     display: flex;
@@ -93,14 +111,15 @@
   .headerContainer {
     display: flex;
     justify-content: center;
-    padding: 12px;
+    padding: 0px;
+    align-items: center;
     width: var(--webmobiled);
     height: 44px;
   }
+
   .headerWrapper {
-    width: var(--webmobiled);
-    background-color: var(--G1op);
-    color: var(--G11);
+    background-color: var(--G9);
+    color: var(--G1);
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -109,7 +128,7 @@
     width: 100%;
     height: 72px;
     z-index: 99;
-    backdrop-filter: blur(10px);
+    position: relative;
   }
 
   .navWrapper {
@@ -134,11 +153,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: 60px;
+    top: 72px;
     left: 0px;
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: #ffff;
+    background-color: var(--G9);
+  }
+  .open {
+    background-color: var(--G9);
   }
 }
