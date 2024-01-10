@@ -116,18 +116,18 @@ body {
     overflow: hidden;
   }
   h1 {
-    font-size: 28px;
+    font-size: 80px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   h3 {
     margin: 0;
     color: var(--G1);
     text-align: var(--align);
-    font-size: 40px;
+    font-size: px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -150,11 +150,12 @@ body {
   }
 
   p {
+    font-size: 16px;
     margin: 0;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
   .PageContainer {
     max-width: var(--web800);
     overflow: hidden;
@@ -190,7 +191,7 @@ body {
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 

@@ -47,7 +47,7 @@ export default function ProjectDetailpage() {
       <div className="PageContainer projectWork">
         <div className="projecttitlecontainer">
           <div className="projectworktitle">
-            <span>{post.title}</span>
+            <h3>{post.title}</h3>
           </div>
           <div className="projectworkengtitle">
             <span>{post.engtitle}</span>

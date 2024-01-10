@@ -6,7 +6,7 @@
 }
 
 .footerContainer {
-  width: 1200px;
+  width: var(--web1000);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -20,4 +20,49 @@
 
 .footerContainer > p {
   color: var(--G4);
+}
+
+@media screen and (max-width: 1324px) {
+  .footer {
+    height: 200px;
+  }
+
+  .footerContainer {
+    width: var(--web1000);
+    gap: 32px;
+  }
+
+  .footerContainer > .logo {
+    width: 96px;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .footer {
+    height: 180px;
+  }
+
+  .footerContainer {
+    width: var(--web800);
+    gap: 32px;
+  }
+
+  .footerContainer > .logo {
+    width: 84px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    height: 160px;
+  }
+
+  .footerContainer {
+    width: var(--webmobiled);
+    gap: 32px;
+  }
+
+  .footerContainer > .logo {
+    width: 64px;
+  }
 }
