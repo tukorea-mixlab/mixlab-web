@@ -198,9 +198,7 @@
   overflow: hidden;
 }
 
-.news:last-child {
-  flex: 0 1 calc(50% - 15px);
-}
+
 
 .news .cardinfoContainer {
   position: absolute;
@@ -265,6 +263,10 @@
 
   .cardContainer {
     flex: 1 1 40%;
+  }
+
+  .news:last-child {
+    flex: 0 1 calc(50% - 15px);
   }
 }
 
