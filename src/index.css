@@ -111,8 +111,9 @@ body {
 }
 
 @media screen and (max-width: 1324px) {
+
   .PageContainer {
-    max-width: var(--web1000);
+    max-width: var(--web800);
     overflow: hidden;
   }
   h1 {

@@ -3,6 +3,8 @@ import Title from "../Title";
 import Button from "../Button/Button";
 import "./section.css";
 
+//될 수 있으면 Title의 props로 전달할 수 있도록 제작해보기
+
 export default function Section(props) {
   return (
     <div className={props.className}>
@@ -15,6 +17,7 @@ export default function Section(props) {
         information={props.information}
         alignItems={props.alignItems}
         align={props.align || "center"}
+        className={`${props.className}inner`}
         children={
           props.type == "right" ? <Button className={"large line"} /> : ""
         }

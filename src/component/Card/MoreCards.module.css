@@ -6,12 +6,11 @@
 }
 
 .MoreCard{
-    height: 280px;
     flex: 1;
     background-image: url(../../Img/F&Q.png);
     background-position: center;
     background-size: cover;
-    padding: 64px 0px;
+    padding: 64px 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,4 +44,11 @@
     margin-bottom: 32px;
     z-index: 1;
     font-size: 16px;
+}
+
+
+@media screen and (max-width: 1124px) {
+    .MoreCards{
+        flex-direction: column;
+    }
 }

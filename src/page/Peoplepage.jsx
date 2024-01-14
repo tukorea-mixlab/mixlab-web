@@ -85,7 +85,7 @@ export default function People() {
           h2={"MIX LAB 교수진"}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"faculty"}
           children={
             <div className="FacultyCard">
               <FacultyCard data={professorData[0]}></FacultyCard>
@@ -98,7 +98,7 @@ export default function People() {
           h2={"MIX LAB 학부생 연구원"}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"student"}
           children={
             <div className="studentCard">
               <StudentCards data={dataGraduate}></StudentCards>
@@ -110,7 +110,7 @@ export default function People() {
           h2={"MIX LAB의 졸업생"}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"student"}
           children={
             <div className="studentCard">
               <StudentCards data={dataStudent}></StudentCards>

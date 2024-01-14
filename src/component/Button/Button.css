@@ -11,6 +11,7 @@
   align-items: center;
   padding: 10px 40px;
 
+
   /*font-family: ;*/
   font-size: 16px;
   cursor: pointer;
@@ -19,6 +20,7 @@
   background-color: var(--P1);
   border: none;
   border-radius: 8px;
+
 }
 
 .btn:hover {

@@ -63,6 +63,7 @@ export default function Mainpage() {
       </div>
       <div className="PageContainer">
         <Section
+          className={"identity"}
           subText={"MIX Lab`s Identity"}
           h2={"MIX LAB 추진방향"}
           information={[
@@ -72,16 +73,17 @@ export default function Mainpage() {
           ]}
           align={"center"}
           type={"center"}
-          className={"identity"}
           children={<IntroList data={Identity}></IntroList>}
         />
 
         <Section
-          className={"recentnews"}
-          subText={"MIX Lab`s Identity"}
-          h2={"MIX LAB 추진방향"}
+          className={"works"}
+          subText={"Our Works"}
+          h2={"MIX LAB의 작품"}
           type={"right"}
           align={"left"}
+          // align={"center"}
+          // alignItems={"center"}
           information={[
             "MIX LAB에서 진행된 MIXER들의 프로젝트 작품들을 ",
             <br />,
@@ -92,6 +94,7 @@ export default function Mainpage() {
         />
 
         <Section
+          className={"recentnews"}
           subText={"RecentNews"}
           h2={"MIX LAB의 최근 소식"}
           information={[
@@ -101,17 +104,16 @@ export default function Mainpage() {
           ]}
           align={"center"}
           type={"center"}
-          className={"identity"}
           children={<SixCarousel />}
         />
 
         <Section
+          className={"information"}
           subText={"More Information"}
           h2={"MIX LAB 더 알아보기"}
           information={["MIX LAB의 구성원과 지원 방법, F&Q입니다."]}
           align={"center"}
           type={"center"}
-          className={"identity"}
           children={<MoreCards />}
         />
       </div>

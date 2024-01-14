@@ -25,7 +25,6 @@
   width: var(--web1200);
   position: absolute;
   z-index: 8;
-
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -58,6 +57,19 @@
     rgba(34, 34, 34, 0.6) 100%
   );
 }
+
+@media screen and (max-width: 1324px) {
+  .textContainer{
+    width: var(--web1000);
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .textContainer{
+    width: var(--web800);
+  }
+}
+
 
 @media screen and (max-width: 800px) {
   .textContainer {

@@ -1,12 +1,64 @@
-.identity {
+.identity, .faculty, .student {
   display: flex;
   flex-direction: column;
   gap: var(--text-margin);
 }
 
-.recentnews {
+
+.works {
   display: flex;
   max-width: 1200px;
-
   gap: var(--text-margin);
+}
+
+.recentnews {
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-margin);
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-margin);
+}
+
+.recentnews .carousel{
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 1324px) {
+  .recentnews{
+    align-items: center;
+  }
+
+  .recentnews .carousel{
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+
+  /* 메인화면의 MIX LAB의 작품 부분 반응형, 페이지 좁아지면 가운데 몰리도록 */
+  .works{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .worksinner{
+    align-items: center;
+  }
+
+  .worksinner p{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {  
+  .recentnews .carousel{
+    flex-direction: column;
+  }
+  .recentnews .carousel .subImg{
+  }
 }
