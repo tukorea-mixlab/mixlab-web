@@ -29,6 +29,12 @@
 
 
 @media screen and (max-width: 1324px) {
+  /* 메인화면의 MIX LAB의 작품 부분 반응형, 페이지 좁아지면 가운데 몰리도록 */
+  .works{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   .recentnews{
     align-items: center;
   }
@@ -39,12 +45,6 @@
 }
 
 @media screen and (max-width: 1124px) {
-
-  /* 메인화면의 MIX LAB의 작품 부분 반응형, 페이지 좁아지면 가운데 몰리도록 */
-  .works{
-    flex-direction: column-reverse;
-    align-items: center;
-  }
 
   .worksinner{
     align-items: center;

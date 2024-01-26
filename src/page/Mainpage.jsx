@@ -46,7 +46,7 @@ export default function Mainpage() {
         <div className="textContainer">
           <div className="hero">
             <div className="title">
-              <h1>Mix LAB,</h1> <h2>Interactive media : EH</h2>
+              <h1>MIX LAB</h1><h2>,Interactive media : EH</h2>
             </div>
             <p>
               우리는 디자인(Design)과 구현(Making)을 통해 인터랙티브 미디어에

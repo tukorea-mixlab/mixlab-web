@@ -15,10 +15,9 @@
   align-items: center;
 }
 
-.title {
+.hero .title {
   display: flex;
   align-items: baseline;
-  color: var(--G1);
 }
 
 .textContainer {
