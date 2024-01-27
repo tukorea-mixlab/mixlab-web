@@ -21,7 +21,7 @@ export default function MoreCards(props) {
     {
       title1:'MIX LAB ',
       title2:'F&Q',
-      context:'MIX LAB의 구성원은 어떻게 되나요?',
+      context:'MIX LAB은 어떻게 들어가나요?',
       button:'More View'
     }
   ]

@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./mainpage.css";
 import Title from "../component/Title";
 import challenge from "../Img/Icons/challenge.png";
@@ -39,6 +40,11 @@ export default function Mainpage() {
   ];
 
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const nav = useNavigate();
+
+  //각 버튼을 눌렀을때,
+  const handleButtonClick = () => {
+  };
 
   return (
     <div className="PageWrapper">
@@ -90,6 +96,9 @@ export default function Mainpage() {
             "볼 수 있습니다.",
           ]}
           width={"408px"}
+          onClick={function () {
+            nav("/intro")
+          }}
           children={<Carousel />}
         />
 

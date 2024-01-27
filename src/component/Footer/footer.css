@@ -6,7 +6,7 @@
 }
 
 .footerContainer {
-  width: var(--web1000);
+  width: var(--web1200);
   margin: auto;
   display: flex;
   flex-direction: column;

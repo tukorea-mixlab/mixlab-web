@@ -35,6 +35,15 @@
     align-items: center;
   }
 
+  .worksinner{
+    align-items: center;
+  }
+
+  .worksinner p{
+    text-align: center;
+  }
+  /* 메인 화면의 다른건 괜찮은데 MIXLAB의 작품 이거 하나만 정렬이 달라서 따로 이렇게 줌 */
+
   .recentnews{
     align-items: center;
   }
@@ -46,13 +55,6 @@
 
 @media screen and (max-width: 1124px) {
 
-  .worksinner{
-    align-items: center;
-  }
-
-  .worksinner p{
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 800px) {  

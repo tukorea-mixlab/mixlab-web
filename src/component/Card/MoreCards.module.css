@@ -47,8 +47,16 @@
 }
 
 
+
+@media screen and (max-width: 1324px) {
+    .MoreCard .title{
+        height: 70px;
+    }
+}
+
 @media screen and (max-width: 1124px) {
     .MoreCards{
         flex-direction: column;
     }
+
 }

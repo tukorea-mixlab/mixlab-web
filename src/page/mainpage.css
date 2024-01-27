@@ -77,7 +77,8 @@
 
   .hero > p {
     margin: 24px 0px 0px 0px;
-    font-size: 12px;
+    font-size: 14px;
+    /* 너무 작아서 12px에서 14px로 수정 */
     font-weight: 500;
     line-height: 160%; /* 32px */
   }

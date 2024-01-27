@@ -19,7 +19,7 @@ export default function Section(props) {
         align={props.align || "center"}
         className={`${props.className}inner`}
         children={
-          props.type == "right" ? <Button className={"large line"} /> : ""
+          props.type == "right" ? <Button onClick={props.onClick} className={"large line"} /> : ""
         }
       />
       {props.type != "right" ? props.children : ""}
