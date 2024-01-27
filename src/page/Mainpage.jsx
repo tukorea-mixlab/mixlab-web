@@ -97,10 +97,11 @@ export default function Mainpage() {
           ]}
           width={"408px"}
           onClick={function () {
-            nav("/intro")
+            nav("/project?scrollToTarget=true")
           }}
           children={<Carousel />}
         />
+        {/* 버튼으로 이동했을때, 스크롤이 될 수 있도록 url에 쿼리문자열 적용*/}
 
         <Section
           className={"recentnews"}

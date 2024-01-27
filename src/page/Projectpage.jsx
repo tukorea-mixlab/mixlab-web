@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./projectpage.css";
 
 import computer from "../Img/Icons/computer.png";
@@ -56,6 +57,15 @@ export default function Projectpage() {
       });
   }, []);
 
+  const location = useLocation();
+  //버튼으로 이동했을때, 바로 프로젝트가 보일 수 있도록 스크롤
+  useEffect(() => {
+    const scroll = new URLSearchParams(location.search).get('scrollToTarget');
+    if (scroll === 'true') {
+      window.scrollTo(0, document.getElementById('target').offsetTop - 120);
+    }
+  })
+
   return (
     <div className="PageWrapper">
       <div className="introContainer">
@@ -66,7 +76,7 @@ export default function Projectpage() {
         <div className="gradient"></div>
         <div className="introbanner"></div>
       </div>
-      <div className="PageContainer">
+      <div id="target" className="PageContainer">
         <Section
           subText={projectdatas.subText}
           h2={projectdatas.h2}

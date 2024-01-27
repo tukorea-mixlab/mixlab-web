@@ -41,6 +41,7 @@ export default function ProjectDetailpage() {
       });
   }, []);
 
+
   console.log(post);
   return (
     <div className="PageWrapper">
