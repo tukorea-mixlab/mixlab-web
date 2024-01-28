@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./mainpage.css";
 import Title from "../component/Title";
@@ -42,10 +42,19 @@ export default function Mainpage() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const nav = useNavigate();
 
-  //각 버튼을 눌렀을때,
-  const handleButtonClick = () => {
-  };
+  const myRef = useRef(null);
 
+  //버튼을 누르면 스크롤이 이동될 수 있도록 제작중
+  const scrollToTarget = () => {
+    if (myRef.current) {
+      var headerOffset = 180;
+      const elementPosition = myRef.current.getBoundingClientRect().top;
+      const offestPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: offestPosition, behavior: 'smooth' });
+    }
+  }
+
+  
   return (
     <div className="PageWrapper">
       <div className="mainContainer">
@@ -62,13 +71,14 @@ export default function Mainpage() {
               MIX LAB <br />” Make Intelligent eXperience ”
             </p>
           </div>
-          <Button />
+          <Button onClick={scrollToTarget} title={'more view'} />
         </div>
         <div className="gradient"></div>
         <div className="mainbanner"></div>
       </div>
       <div className="PageContainer">
         <Section
+          ref={myRef}
           className={"identity"}
           subText={"MIX Lab`s Identity"}
           h2={"MIX LAB 추진방향"}
