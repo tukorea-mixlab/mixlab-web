@@ -109,6 +109,7 @@ export default function Mainpage() {
           onClick={function () {
             nav("/project?scrollToTarget=true")
           }}
+          buttonText={"프로젝트 보기"}
           children={<Carousel />}
         />
         {/* 버튼으로 이동했을때, 스크롤이 될 수 있도록 url에 쿼리문자열 적용*/}
@@ -134,7 +135,16 @@ export default function Mainpage() {
           information={["MIX LAB의 구성원과 지원 방법, F&Q입니다."]}
           align={"center"}
           type={"center"}
-          children={<MoreCards />}
+          children={<MoreCards 
+            onClick_people={function () {
+              nav("/people?focusToPeople=true")
+            }}
+            onClick_apply={function () {
+              nav("/intro?focusToApply=true")
+            }}
+            onClick_qna={function () {
+              nav("/intro?focusToFnq=true")
+            }}/>}
         />
       </div>
     </div>

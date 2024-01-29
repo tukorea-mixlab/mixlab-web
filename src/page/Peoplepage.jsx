@@ -1,4 +1,5 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useRef } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Peoplepage.css";
 import hanjongkimImg from "../Img/People/hanjongkim.png";
 import moonhwanleeImg from "../Img/People/moonhwanlee.png";
@@ -69,6 +70,20 @@ export default function People() {
       });
   }, []);
 
+  const location = useLocation();
+  const peopleRef = useRef(null);
+
+  useEffect(() => {
+    
+    const focusToPeople = new URLSearchParams(location.search).get('focusToPeople');
+      if (focusToPeople === 'true') {
+        var headerOffset = 180;
+        const elementPosition = peopleRef.current.getBoundingClientRect().top;
+        const offestPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: offestPosition});
+      }
+  },[])
+
   return (
     <div className="PageWrapper">
       <div className="introContainer">
@@ -81,6 +96,7 @@ export default function People() {
       </div>
       <div className="PageContainer">
         <Section
+          ref={peopleRef}
           subText={"Faculty"}
           h2={"MIX LAB 교수진"}
           align={"center"}

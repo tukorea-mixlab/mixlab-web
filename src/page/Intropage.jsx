@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import { React, useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import "./intropage.css";
 import computer from "../Img/Icons/computer.png";
 import facturing from "../Img/Icons/facturing.png";
@@ -9,7 +10,7 @@ import Section from "../component/Section/Section";
 import CategoryList from "../component/Category/CategoryList";
 import Card_application from "../component/Card/Card_application";
 
-export default function intropage() {
+export default function Intropage() {
   const data = {
     subText: "Overview",
     h2: "What is MIX LAB",
@@ -295,6 +296,27 @@ export default function intropage() {
     },
   ];
 
+  const location = useLocation();
+  const applyRef = useRef(null);
+  const fnqRef = useRef(null);
+
+  useEffect(() => {
+    
+    const focusToApply = new URLSearchParams(location.search).get('focusToApply');
+    const focusToFnq = new URLSearchParams(location.search).get('focusToFnq');
+      if (focusToApply === 'true') {
+        var headerOffset = 180;
+        const elementPosition = applyRef.current.getBoundingClientRect().top;
+        const offestPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: offestPosition});
+      }else if(focusToFnq === 'true'){
+        var headerOffset = 180;
+        const elementPosition = fnqRef.current.getBoundingClientRect().top;
+        const offestPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: offestPosition});
+    }
+  })
+
   return (
     <div className="PageWrapper">
       <div className="introContainer">
@@ -318,6 +340,7 @@ export default function intropage() {
 
         {/* 자주 묻는 질문들 레이아웃 추가 (12-27 11:46) */}
         <Section
+          ref={fnqRef}
           h2={"자주 묻는 질문들"}
           align={"center"}
           type={"center"}
@@ -336,6 +359,7 @@ export default function intropage() {
 
         {/*Mix지원하기 추가 (12-31 22:08) */}
         <Section
+          ref={applyRef}
           h2={"MIX LAB에 지원하기"}
           align={"center"}
           type={"center"}

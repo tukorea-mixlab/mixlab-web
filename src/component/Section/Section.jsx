@@ -19,7 +19,7 @@ const Section = forwardRef((props, ref) => {
         align={props.align || "center"}
         className={`${props.className}inner`}
         children={
-          props.type == "right" ? <Button onClick={props.onClick} className={"large line"} /> : ""
+          props.type == "right" ? <Button onClick={props.onClick} title={props.buttonText} className={"large line"} /> : ""
         }
       />
       {props.type != "right" ? props.children : ""}
