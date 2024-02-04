@@ -6,6 +6,7 @@
   max-width: 100%;
   overflow: hidden;
 }
+
 .subImg {
   position: relative;
 }
@@ -39,6 +40,10 @@
   top: 0px;
   width: 20px;
   height: 20px;
+}
+
+.carousel > .subImg > img {
+  object-fit: cover;
 }
 
 @media screen and (max-width: 900px) {

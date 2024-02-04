@@ -65,13 +65,18 @@ export default function ProjectDetailpage() {
             style={{
               backgroundImage: `url(${post.mainimg})`,
             }}
-          ></div>
+          >
+        </div>
+
+        {post.subimg && (
           <div
             className="porjectimg subimg"
             style={{
               backgroundImage: `url(${post.subimg})`,
             }}
           ></div>
+        )}
+
         </div>
 
         <div className="projectworkinfo">

@@ -6,7 +6,7 @@ import img2 from "../../Img/plus.svg";
 
 export default function Subimg(props) {
   return (
-    <div className="subImg">
+    <div className="subImg" onClick={props.onClick}>
       <div className="hover">
         <img src={img2} alt="" />
         <span>More view</span>
