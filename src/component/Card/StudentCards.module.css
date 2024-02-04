@@ -10,7 +10,7 @@
     color: var(--G1);
     display: flex;
     gap: 12px;
-    max-width: calc(33.33% - 24px);
+    max-width: calc(33.33% - 15px);
     flex: 1;
 }
 
@@ -62,4 +62,27 @@
 .StudentCard_content .work{
     font-size: 14px;
     font-weight: 300;
+}
+
+@media screen and (max-width: 1324px) {
+    .StudentCard{
+        flex: 1 1 40%;
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media screen and (max-width: 1124px) {
+    .StudentCard .name{
+        font-size: 20px;
+    }
+    .StudentCard .department, .StudentCard .major{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .StudentCard{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }

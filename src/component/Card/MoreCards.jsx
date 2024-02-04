@@ -10,19 +10,22 @@ export default function MoreCards(props) {
       title1:'Who is ',
       title2:'MIXER',
       context:'MIX LAB의 구성원은 어떻게 되나요?',
-      button:'More View'
+      button:'More View',
+      event:props.onClick_people
     },
     {
       title1:'MIX LAB ',
       title2:'지원하기',
       context:'MIX LAB에서 함께할 분들을 찾습니다',
-      button:'Apply'
+      button:'Apply',
+      event:props.onClick_apply
     },
     {
       title1:'MIX LAB ',
       title2:'F&Q',
-      context:'MIX LAB의 구성원은 어떻게 되나요?',
-      button:'More View'
+      context:'MIX LAB은 어떻게 들어가나요?',
+      button:'More View',
+      event:props.onClick_qna
     }
   ]
 
@@ -40,6 +43,7 @@ export default function MoreCards(props) {
         <div className={styles.button}>
           <Button
             title={data[props.num].button}
+            onClick={props.onClick}
           />
           {/* {data[props.num].context} */}
         </div>
@@ -54,6 +58,7 @@ export default function MoreCards(props) {
       {data.map((Data, num) => (
         <MoreCard
           num = {num}
+          onClick={data[num].event}
         ></MoreCard>
       ))}
     </div>

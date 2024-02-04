@@ -2,4 +2,45 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  justify-content: center;
+}
+.subImg{
+  position: relative;
+}
+
+.subImg .hover{
+  top: 0px;
+  left: 0px;
+  width: 175px;
+  height: 175px;
+  background-color: rgba(0, 0, 0, 0.542);
+  position: absolute;
+  opacity: 0;
+  transition: all 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subImg .hover span{
+  color: var(--G1);
+  font-size: 16px;
+}
+
+.subImg:hover .hover{
+  opacity: 100;
+}
+
+.subImg .hover img{
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel{
+    flex-direction: column;
+  }
 }

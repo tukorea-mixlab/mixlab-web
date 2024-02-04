@@ -88,6 +88,7 @@
   background-color: var(--P2);
 }
 
+
 @media screen and (max-width: 1124px) {
   .introList {
     width: 100%;
@@ -113,6 +114,7 @@
   .information {
     font-size: 14px;
   }
+
 }
 
 @media screen and (max-width: 800px) {

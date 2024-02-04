@@ -1,4 +1,5 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useRef } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Peoplepage.css";
 import hanjongkimImg from "../Img/People/hanjongkim.png";
 import moonhwanleeImg from "../Img/People/moonhwanlee.png";
@@ -69,6 +70,20 @@ export default function People() {
       });
   }, []);
 
+  const location = useLocation();
+  const peopleRef = useRef(null);
+
+  useEffect(() => {
+    
+    const focusToPeople = new URLSearchParams(location.search).get('focusToPeople');
+      if (focusToPeople === 'true') {
+        var headerOffset = 180;
+        const elementPosition = peopleRef.current.getBoundingClientRect().top;
+        const offestPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: offestPosition});
+      }
+  },[])
+
   return (
     <div className="PageWrapper">
       <div className="introContainer">
@@ -81,11 +96,12 @@ export default function People() {
       </div>
       <div className="PageContainer">
         <Section
+          ref={peopleRef}
           subText={"Faculty"}
           h2={"MIX LAB 교수진"}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"faculty"}
           children={
             <div className="FacultyCard">
               <FacultyCard data={professorData[0]}></FacultyCard>
@@ -98,7 +114,7 @@ export default function People() {
           h2={"MIX LAB 학부생 연구원"}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"student"}
           children={
             <div className="studentCard">
               <StudentCards data={dataGraduate}></StudentCards>
@@ -110,7 +126,7 @@ export default function People() {
           h2={"MIX LAB의 졸업생"}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"student"}
           children={
             <div className="studentCard">
               <StudentCards data={dataStudent}></StudentCards>

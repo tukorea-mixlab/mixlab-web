@@ -3,7 +3,7 @@ import styles from "./component.module.css";
 export default function Title(props) {
   // title type = left , center etc
   return (
-    <div className={styles.titleContainer} style={{ width: props.width }}>
+    <div className={`${styles.titleContainer} ${props.className}`} style={{ width: props.width }}>
       <div
         className={styles.mainTitle}
         style={{ alignItems: props.alignItems }}

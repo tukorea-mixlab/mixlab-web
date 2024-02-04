@@ -1,4 +1,5 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useRef } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./projectpage.css";
 
 import computer from "../Img/Icons/computer.png";
@@ -56,6 +57,23 @@ export default function Projectpage() {
       });
   }, []);
 
+  const location = useLocation();
+  const myRef = useRef(null);
+
+  //버튼으로 이동했을때, 바로 프로젝트가 보일 수 있도록 스크롤
+  useEffect(() => {
+    const scroll = new URLSearchParams(location.search).get('scrollToTarget');
+    if (myRef.current) {
+      if (scroll === 'true') {
+      // window.scrollTo(0, document.getElementById('target').offsetTop - 120);
+        var headerOffset = 180;
+        const elementPosition = myRef.current.getBoundingClientRect().top;
+        const offestPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: offestPosition});
+      }
+    }
+  })
+
   return (
     <div className="PageWrapper">
       <div className="introContainer">
@@ -68,6 +86,7 @@ export default function Projectpage() {
       </div>
       <div className="PageContainer">
         <Section
+          ref={myRef}
           subText={projectdatas.subText}
           h2={projectdatas.h2}
           information={projectdatas.information}

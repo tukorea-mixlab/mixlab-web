@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import { React, useState, useRef } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./mainpage.css";
 import Title from "../component/Title";
 import challenge from "../Img/Icons/challenge.png";
@@ -39,14 +40,28 @@ export default function Mainpage() {
   ];
 
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const nav = useNavigate();
 
+  const myRef = useRef(null);
+
+  //버튼을 누르면 스크롤이 이동될 수 있도록 제작중
+  const scrollToTarget = () => {
+    if (myRef.current) {
+      var headerOffset = 180;
+      const elementPosition = myRef.current.getBoundingClientRect().top;
+      const offestPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: offestPosition, behavior: 'smooth' });
+    }
+  }
+
+  
   return (
     <div className="PageWrapper">
       <div className="mainContainer">
         <div className="textContainer">
           <div className="hero">
             <div className="title">
-              <h1>Mix LAB,</h1> <h2>Interactive media : EH</h2>
+              <h1>MIX LAB</h1><h2>,Interactive media : EH</h2>
             </div>
             <p>
               우리는 디자인(Design)과 구현(Making)을 통해 인터랙티브 미디어에
@@ -56,13 +71,15 @@ export default function Mainpage() {
               MIX LAB <br />” Make Intelligent eXperience ”
             </p>
           </div>
-          <Button />
+          <Button onClick={scrollToTarget} title={'more view'} />
         </div>
         <div className="gradient"></div>
         <div className="mainbanner"></div>
       </div>
       <div className="PageContainer">
         <Section
+          ref={myRef}
+          className={"identity"}
           subText={"MIX Lab`s Identity"}
           h2={"MIX LAB 추진방향"}
           information={[
@@ -72,26 +89,33 @@ export default function Mainpage() {
           ]}
           align={"center"}
           type={"center"}
-          className={"identity"}
           children={<IntroList data={Identity}></IntroList>}
         />
 
         <Section
-          className={"recentnews"}
-          subText={"MIX Lab`s Identity"}
-          h2={"MIX LAB 추진방향"}
+          className={"works"}
+          subText={"Our Works"}
+          h2={"MIX LAB의 작품"}
           type={"right"}
           align={"left"}
+          // align={"center"}
+          // alignItems={"center"}
           information={[
             "MIX LAB에서 진행된 MIXER들의 프로젝트 작품들을 ",
             <br />,
             "볼 수 있습니다.",
           ]}
           width={"408px"}
+          onClick={function () {
+            nav("/project?scrollToTarget=true")
+          }}
+          buttonText={"프로젝트 보기"}
           children={<Carousel />}
         />
+        {/* 버튼으로 이동했을때, 스크롤이 될 수 있도록 url에 쿼리문자열 적용*/}
 
         <Section
+          className={"recentnews"}
           subText={"RecentNews"}
           h2={"MIX LAB의 최근 소식"}
           information={[
@@ -101,18 +125,26 @@ export default function Mainpage() {
           ]}
           align={"center"}
           type={"center"}
-          className={"identity"}
           children={<SixCarousel />}
         />
 
         <Section
+          className={"information"}
           subText={"More Information"}
           h2={"MIX LAB 더 알아보기"}
           information={["MIX LAB의 구성원과 지원 방법, F&Q입니다."]}
           align={"center"}
           type={"center"}
-          className={"identity"}
-          children={<MoreCards />}
+          children={<MoreCards 
+            onClick_people={function () {
+              nav("/people?focusToPeople=true")
+            }}
+            onClick_apply={function () {
+              nav("/intro?focusToApply=true")
+            }}
+            onClick_qna={function () {
+              nav("/intro?focusToFnq=true")
+            }}/>}
         />
       </div>
     </div>

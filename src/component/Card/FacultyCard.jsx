@@ -9,7 +9,7 @@ export default function FacultyCard(props) {
         <img src={props.data.image} alt="" />
       </div>
       <div className={styles.Content}>
-          <h1>{props.data.name}</h1>
+        <h1 className={styles.name}>{props.data.name}</h1>
         <div className={styles.Info}>
           <div className={styles.professor}>
             <div>
