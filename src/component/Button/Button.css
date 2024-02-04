@@ -11,27 +11,24 @@
   align-items: center;
   padding: 10px 40px;
 
-
   /*font-family: ;*/
   font-size: 16px;
   cursor: pointer;
   color: var(--G1);
 
-  background-color: var(--P1);
-  border: none;
-  border-radius: 8px;
-
+  background-color: transparent;
+  border: 1px solid var(--G1);
 }
 
 .btn:hover {
-  background-color: var(--P2);
+  border: 1px solid var(--G5);
   transition: 0.4s;
+  color: var(--G5);
 }
 
 .btn:disabled {
   background-color: var(--G7);
   color: var(--G1);
-  background-color: var(--G7);
 }
 
 /*.round*/
@@ -55,15 +52,15 @@
 /*.line*/
 .line {
   cursor: pointer;
-  color: var(--P1);
+  color: var(--G1);
   background-color: transparent !important;
-  border: 2px solid var(--P1);
-  border-radius: 8px;
+  border: 1px solid var(--G1);
 }
 
 .line:hover {
-  color: var(--P2);
-  border: 2px solid var(--P2);
+  border: 1px solid var(--G5);
+  transition: 0.4s;
+  color: var(--G5);
 }
 
 .line:disabled {
@@ -74,13 +71,13 @@
 .btn > span {
   z-index: 999;
 }
-
+/* 
 .btn:hover .floatani {
   position: absolute;
   width: 90px;
   height: 90px;
   border-radius: 9999px;
-  background-color: var(--G1);
+  background-color: var(--G3);
   animation-duration: 1s;
   animation-name: scaled;
   bottom: -120px;
@@ -89,14 +86,14 @@
 @keyframes scaled {
   0% {
     transform: scale(0.5);
-    background-color: var(--G9);
+    background-color: var(--G5);
   }
   100% {
     transform: scale(3.5);
-    background-color: var(--P2);
+    background-color: var(--G3);
   }
 }
 
 .line:hover .floatani {
   animation: none;
-}
+} */

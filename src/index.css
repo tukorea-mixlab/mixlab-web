@@ -8,13 +8,13 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"); */
 
 @font-face {
-  font-family: 'Pretendard Variable';
+  font-family: "Pretendard Variable";
   font-weight: normal;
   src: url("./font/PretendardVariable.ttf") format("truetype");
 }
 
 * {
-  font-family: 'Pretendard Variable';
+  font-family: "Pretendard Variable";
 }
 
 /* 프리텐다드 적용 */
@@ -58,7 +58,6 @@ body {
 .center {
   text-align: center;
 }
-
 
 h1 {
   font-size: 80px;
@@ -119,7 +118,6 @@ p {
 }
 
 @media screen and (max-width: 1324px) {
-
   .PageContainer {
     max-width: var(--web800);
     overflow: hidden;
@@ -204,7 +202,7 @@ p {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .PageContainer {
     max-width: var(--webmobiled);
     overflow: hidden;

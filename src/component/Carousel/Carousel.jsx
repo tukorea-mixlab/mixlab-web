@@ -13,7 +13,6 @@ export default function Carousel(props) {
         <img src={img} style={{ width: "277px", height: "277px" }} alt="" />
       </div>
       <div className="subImg">
-        {" "}
         <img src={img} style={{ width: "175px", height: "175px" }} alt="" />
       </div>
     </div>

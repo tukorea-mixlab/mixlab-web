@@ -68,7 +68,7 @@ ul {
   font-size: 18px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .wrap {
     display: flex;
     flex-direction: column;

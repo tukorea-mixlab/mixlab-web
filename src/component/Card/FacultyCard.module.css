@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap");
 
-.FacultyCard{
+.FacultyCard {
   color: var(--G1);
   background-color: var(--G9);
   display: flex;
@@ -10,40 +10,40 @@
   font-weight: 300;
 }
 
-.Photo img{
+.Photo img {
   border-radius: 12px;
   width: 175px;
   height: 233px;
 }
 
-.Content{
+.Content {
   display: flex;
   gap: 16px;
   flex-direction: column;
 }
 
-.Content h1{
+.Content h1 {
   font-size: 24px;
   font-weight: 400;
 }
 
-.Info{
+.Info {
   display: flex;
   gap: 30px;
 }
 
-.professor{
+.professor {
   display: flex;
   flex-direction: column;
   flex: 50%;
 }
 
-.professor>div{
+.professor > div {
   font-size: 20px;
   margin-bottom: 24px;
 }
 
-.professor b{
+.professor b {
   font-size: 20px;
   font-weight: 400;
 }
@@ -54,21 +54,21 @@
 }
 
 @media screen and (max-width: 1124px) {
-  .Content .name{
+  .Content .name {
     font-size: 20px;
   }
-  .Content .Info *{
+  .Content .Info * {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .FacultyCard{
+@media screen and (max-width: 900px) {
+  .FacultyCard {
     flex-direction: column;
     align-items: center;
   }
 
-  .FacultyCard .Info{
+  .FacultyCard .Info {
     flex-direction: column;
   }
 }

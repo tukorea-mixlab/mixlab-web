@@ -5,6 +5,13 @@
 .projectWork {
   gap: 80px !important;
 }
+.projectworktitle > span {
+  color: var(--G1, #fff);
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: semiBold;
+  line-height: 120%;
+}
 
 .projectworkengtitle > span {
   color: var(--G1, #fff);
@@ -142,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .projectworklink {
     text-decoration: underline;
     color: var(--G5, #b5b5b5);

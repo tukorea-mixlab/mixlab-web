@@ -1,6 +1,7 @@
-import { React, useState, useRef } from "react";
+import { React, useState, useRef, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./mainpage.css";
+import { db, storage } from "../firebase";
 import Title from "../component/Title";
 import challenge from "../Img/Icons/challenge.png";
 import exploration from "../Img/Icons/exploration.png";
@@ -49,19 +50,48 @@ export default function Mainpage() {
     if (myRef.current) {
       var headerOffset = 180;
       const elementPosition = myRef.current.getBoundingClientRect().top;
-      const offestPosition = elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({ top: offestPosition, behavior: 'smooth' });
+      const offestPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: offestPosition, behavior: "smooth" });
     }
-  }
+  };
 
-  
+  const [porjectdata, setProjectData] = useState([]);
+
+  useEffect(function () {
+    let projectDatas = [];
+    db.collection("project_works")
+      .get()
+      .then(function (qs) {
+        qs.forEach((doc) => {
+          projectDatas.push(doc.data());
+        });
+        setProjectData(projectDatas.slice(0, 3));
+      });
+  }, []);
+
+  const [newsData, setNewsData] = useState([]);
+
+  useEffect(function () {
+    let Datas = [];
+    db.collection("news")
+      .get()
+      .then(function (qs) {
+        qs.forEach((doc) => {
+          Datas.push(doc.data());
+        });
+        setNewsData(Datas.slice(0, 6));
+      });
+  }, []);
+
   return (
     <div className="PageWrapper">
       <div className="mainContainer">
         <div className="textContainer">
           <div className="hero">
             <div className="title">
-              <h1>MIX LAB</h1><h2>,Interactive media : EH</h2>
+              <h1>MIX LAB</h1>
+              <h2>,Interactive media : EH</h2>
             </div>
             <p>
               우리는 디자인(Design)과 구현(Making)을 통해 인터랙티브 미디어에
@@ -71,7 +101,7 @@ export default function Mainpage() {
               MIX LAB <br />” Make Intelligent eXperience ”
             </p>
           </div>
-          <Button onClick={scrollToTarget} title={'more view'} />
+          <Button onClick={scrollToTarget} title={"more view"} />
         </div>
         <div className="gradient"></div>
         <div className="mainbanner"></div>
@@ -107,7 +137,7 @@ export default function Mainpage() {
           ]}
           width={"408px"}
           onClick={function () {
-            nav("/project?scrollToTarget=true")
+            nav("/project?scrollToTarget=true");
           }}
           buttonText={"프로젝트 보기"}
           children={<Carousel />}
@@ -125,7 +155,7 @@ export default function Mainpage() {
           ]}
           align={"center"}
           type={"center"}
-          children={<SixCarousel />}
+          children={<SixCarousel data={newsData} />}
         />
 
         <Section
@@ -135,16 +165,19 @@ export default function Mainpage() {
           information={["MIX LAB의 구성원과 지원 방법, F&Q입니다."]}
           align={"center"}
           type={"center"}
-          children={<MoreCards 
-            onClick_people={function () {
-              nav("/people?focusToPeople=true")
-            }}
-            onClick_apply={function () {
-              nav("/intro?focusToApply=true")
-            }}
-            onClick_qna={function () {
-              nav("/intro?focusToFnq=true")
-            }}/>}
+          children={
+            <MoreCards
+              onClick_people={function () {
+                nav("/people?focusToPeople=true");
+              }}
+              onClick_apply={function () {
+                nav("/intro?focusToApply=true");
+              }}
+              onClick_qna={function () {
+                nav("/intro?focusToFnq=true");
+              }}
+            />
+          }
         />
       </div>
     </div>

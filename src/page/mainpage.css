@@ -58,19 +58,18 @@
 }
 
 @media screen and (max-width: 1324px) {
-  .textContainer{
+  .textContainer {
     width: var(--web1000);
   }
 }
 
 @media screen and (max-width: 1124px) {
-  .textContainer{
+  .textContainer {
     width: var(--web800);
   }
 }
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .textContainer {
     width: var(--webmobiled);
   }

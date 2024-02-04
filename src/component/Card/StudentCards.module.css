@@ -1,88 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap");
 
-.StudentCards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 90px 30px;
+.StudentCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px 30px;
 }
 
-.StudentCard{
-    color: var(--G1);
-    display: flex;
-    gap: 12px;
-    max-width: calc(33.33% - 15px);
-    flex: 1;
+.StudentCard {
+  color: var(--G1);
+  display: flex;
+  gap: 12px;
+  max-width: calc(33.33% - 15px);
+  flex: 1;
 }
 
-.StudentCard img{
-    width: 120px;
-    height: 160px;
-    border-radius: 12px;
-    background-color: var(--G3);
+.StudentCard img {
+  width: 120px;
+  height: 160px;
+  border-radius: 12px;
+  background-color: var(--G3);
 }
 
-.StudentCard_content{
-    padding: 20px 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
+.StudentCard_content {
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
-.StudentCard_content > div:nth-child(1){
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.StudentCard_content > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.StudentCard_content .name{
-    font-size: 24px;
-    font-weight: 500;
+.StudentCard_content .name {
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.StudentCard_content .email{
-    font-size: 11px;
-    font-weight: 300;
-    color: var(--G4);
+.StudentCard_content .email {
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--G4);
 }
 
-.StudentCard_content > div:nth-child(2){
+.StudentCard_content > div:nth-child(2) {
 }
 
-.StudentCard_content .department{
-    font-size: 16px;
-    font-weight: 300;
+.StudentCard_content .department {
+  font-size: 16px;
+  font-weight: 300;
 }
 
-.StudentCard_content .major{
-    font-size: 16px;
-    font-weight: 300;
+.StudentCard_content .major {
+  font-size: 16px;
+  font-weight: 300;
 }
 
-.StudentCard_content .work{
-    font-size: 14px;
-    font-weight: 300;
+.StudentCard_content .work {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 1324px) {
-    .StudentCard{
-        flex: 1 1 40%;
-        max-width: calc(50% - 15px);
-    }
+  .StudentCard {
+    flex: 1 1 40%;
+    max-width: calc(50% - 15px);
+  }
 }
 
 @media screen and (max-width: 1124px) {
-    .StudentCard .name{
-        font-size: 20px;
-    }
-    .StudentCard .department, .StudentCard .major{
-        font-size: 14px;
-    }
+  .StudentCard .name {
+    font-size: 20px;
+  }
+  .StudentCard .department,
+  .StudentCard .major {
+    font-size: 14px;
+  }
 }
 
-@media screen and (max-width: 800px) {
-    .StudentCard{
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
+@media screen and (max-width: 900px) {
+  .StudentCard {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
