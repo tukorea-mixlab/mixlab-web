@@ -7,11 +7,13 @@ export default function SixCarousel(props) {
   const nav = useNavigate();
 
   const list = props.data.map(function (item) {
-    const projectlink = () => {
-      const url = item.link;
-      window.open(url, "_blank");
-    };
-    return <Subimg img={item.thumbnail} />;
+    return<Subimg
+    key={item.id}
+    img={item.thumbnail}
+    onClick={function () {
+      nav("/news/" + item.title)
+    }}
+    />;
   });
 
   return <div className={"carousel"}>{list}</div>;

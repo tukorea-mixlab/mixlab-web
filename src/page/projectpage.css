@@ -55,9 +55,10 @@
 }
 
 .porjectimg {
+  background-color: #fff;
   width: 585px;
   height: 326px;
-
+  background-position: center;
   background-size: cover;
   border-radius: 4px;
 }

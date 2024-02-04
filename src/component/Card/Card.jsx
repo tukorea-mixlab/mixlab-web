@@ -26,7 +26,7 @@ export default function Card(props) {
       ></div>
       <div className="cardinfoContainer">
         <div className="cardTextContainer">
-          <div className={`cardTitle `}>
+          <div className={`cardTitle`}>
             <span>{props.title || "sad"}</span>
           </div>
           <div className="cardIntro">
