@@ -47,7 +47,7 @@
 
 .cardContainer:hover .cardIntro > span {
   text-overflow: hidden;
-  text-wrap: nowrap;
+  -webkit-line-clamp: 2;
 }
 
 .cardContainer:hover .cardTitle > span {
