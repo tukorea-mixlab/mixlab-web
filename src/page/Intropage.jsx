@@ -301,21 +301,24 @@ export default function Intropage() {
   const fnqRef = useRef(null);
 
   useEffect(() => {
-    
-    const focusToApply = new URLSearchParams(location.search).get('focusToApply');
-    const focusToFnq = new URLSearchParams(location.search).get('focusToFnq');
-      if (focusToApply === 'true') {
-        var headerOffset = 180;
-        const elementPosition = applyRef.current.getBoundingClientRect().top;
-        const offestPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({ top: offestPosition});
-      }else if(focusToFnq === 'true'){
-        var headerOffset = 180;
-        const elementPosition = fnqRef.current.getBoundingClientRect().top;
-        const offestPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({ top: offestPosition});
+    const focusToApply = new URLSearchParams(location.search).get(
+      "focusToApply"
+    );
+    const focusToFnq = new URLSearchParams(location.search).get("focusToFnq");
+    if (focusToApply === "true") {
+      var headerOffset = 180;
+      const elementPosition = applyRef.current.getBoundingClientRect().top;
+      const offestPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: offestPosition });
+    } else if (focusToFnq === "true") {
+      var headerOffset = 180;
+      const elementPosition = fnqRef.current.getBoundingClientRect().top;
+      const offestPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: offestPosition });
     }
-  })
+  });
 
   return (
     <div className="PageWrapper">
@@ -341,10 +344,10 @@ export default function Intropage() {
         {/* 자주 묻는 질문들 레이아웃 추가 (12-27 11:46) */}
         <Section
           ref={fnqRef}
+          className={"manyquestion"}
           h2={"자주 묻는 질문들"}
           align={"center"}
           type={"center"}
-          className={"identity"}
           children={<CategoryList QnA={QnA} Hyphen={true}></CategoryList>}
         />
 
@@ -353,7 +356,7 @@ export default function Intropage() {
           h2={"MIX LAB 역사"}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"history"}
           children={<CategoryList QnA={History} Hyphen={false}></CategoryList>}
         />
 
@@ -363,7 +366,7 @@ export default function Intropage() {
           h2={"MIX LAB에 지원하기"}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"apply"}
           children={
             <div>
               <Card_application></Card_application>

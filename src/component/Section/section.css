@@ -1,6 +1,19 @@
+.section {
+  opacity: 0;
+  transition: 500ms;
+}
+
+.manyquestion,
+.graduatedstudent,
+.history,
 .identity,
+.RecentNews,
+.ResearchProject,
 .faculty,
+.apply,
+.prize,
 .student {
+  /* opacity: 1 !important; */
   display: flex;
   flex-direction: column;
   gap: var(--text-margin);
@@ -10,22 +23,26 @@
   display: flex;
   max-width: 1200px;
   gap: var(--text-margin);
+  transition: 500ms;
 }
 
 .recentnews {
   display: flex;
   flex-direction: column;
   gap: var(--text-margin);
+  transition: 500ms;
 }
 
 .information {
   display: flex;
   flex-direction: column;
   gap: var(--text-margin);
+  transition: 500ms;
 }
 
 .recentnews .carousel {
   flex-wrap: wrap;
+  transition: 500ms;
 }
 
 @media screen and (max-width: 1324px) {

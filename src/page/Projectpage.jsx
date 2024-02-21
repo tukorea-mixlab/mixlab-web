@@ -92,7 +92,7 @@ export default function Projectpage() {
           information={projectdatas.information}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"ResearchProject"}
           children={<CardList type={"project"} data={data} />}
         />
 

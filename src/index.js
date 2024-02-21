@@ -17,7 +17,7 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route element={<MainLayout />}>
         <Route index element={<Mainpage />}></Route>
@@ -25,9 +25,9 @@ root.render(
         <Route path="/intro" element={<Intropage />}></Route>
         <Route path="/project" element={<Projectpage />}></Route>
         <Route path="/news" element={<Newspage />}></Route>
-        <Route path="/project/:id" element={<ProjectDetailpage/>}></Route>
-        <Route path="/news/:id" element={<NewsDetailpage/>}></Route>
-        <Route path="/award/:id" element={<AwardDetailpage/>}></Route>
+        <Route path="/project/:id" element={<ProjectDetailpage />}></Route>
+        <Route path="/news/:id" element={<NewsDetailpage />}></Route>
+        <Route path="/award/:id" element={<AwardDetailpage />}></Route>
       </Route>
     </Routes>
   </BrowserRouter>

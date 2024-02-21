@@ -126,7 +126,7 @@ export default function People() {
           h2={"MIX LAB의 졸업생"}
           align={"center"}
           type={"center"}
-          className={"student"}
+          className={"graduatedstudent"}
           children={
             <div className="studentCard">
               <StudentCards data={dataStudent}></StudentCards>

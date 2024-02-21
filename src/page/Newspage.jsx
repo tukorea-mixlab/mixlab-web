@@ -52,7 +52,7 @@ export default function Newspage() {
           information={"기능대회, 어워드 등 연구 프로젝트 작업물입니다."}
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"prize"}
           children={
             <div>
               <CardList type={"award"} data={awardData} />
@@ -72,7 +72,7 @@ export default function Newspage() {
           }
           align={"center"}
           type={"center"}
-          className={"identity"}
+          className={"RecentNews"}
           children={
             <div>
               <CardList type={"news"} data={newsData} />
