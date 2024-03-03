@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.section:nth-child(1) {
+  opacity: 1 !important;
+}
+
 .manyquestion,
 .graduatedstudent,
 .history,
