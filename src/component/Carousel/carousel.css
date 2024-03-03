@@ -56,7 +56,7 @@
   .carousel {
     flex-direction: column;
   }
-
+  .carousel > .subImg,
   .carousel > .subImg > img {
     width: 277px !important;
     height: 277px !important;

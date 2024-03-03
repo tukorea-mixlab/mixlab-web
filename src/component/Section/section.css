@@ -1,6 +1,7 @@
 .section {
   opacity: 0;
   transition: 500ms;
+  margin: 0 auto;
 }
 
 .manyquestion,
@@ -78,5 +79,6 @@
     flex-direction: column;
   }
   .recentnews .carousel .subImg {
+    width: 100%;
   }
 }
