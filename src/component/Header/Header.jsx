@@ -44,35 +44,35 @@ function Header(props) {
           onClick={function () {
             nav("/intro");
             scrollToTop(); // Nav 클릭 시 스크롤 초기화
-            window.location.reload();
+            // window.location.reload();
           }}
         />
         <Nav
-          title="people"
+          title="People"
           to="/people"
           onClick={function () {
             nav("/people");
             scrollToTop(); // Nav 클릭 시 스크롤 초기화
-            window.location.reload();
+            // window.location.reload();
           }}
         />
         <Nav
-          title="project"
+          title="Project"
           to="/project"
           onClick={function () {
             console.log("des");
             nav("/project");
             scrollToTop(); // Nav 클릭 시 스크롤 초기화
-            window.location.reload();
+            // window.location.reload();
           }}
         />
         <Nav
-          title="news"
+          title="News"
           to="/news"
           onClick={function () {
             nav("/news");
             scrollToTop(); // Nav 클릭 시 스크롤 초기화
-            window.location.reload();
+            // window.location.reload();
           }}
         />
       </div>
